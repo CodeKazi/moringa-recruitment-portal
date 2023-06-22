@@ -56,8 +56,19 @@ const Dashboard = () => {
         </div>
 
         {/* Body, part 2 */}
-        <div className='bg-[#959595] w-[1440px] h-[334px] flex flex-row items-center justify-center'>
-            <h1 className='text-4xl text-white'>Moringa news Area</h1>
+        <div className='bg-moringa_blue opacity-80 w-[1440px] h-[334px] flex flex-row flex-shrink-0 items-center justify-center px-10'>
+            <div className='basis-1/2 px-20'>
+                <h2 className='text-2xl font-semibold text-white'>Moringa News</h2>
+                <p className='w-[478px] flex flex-col flex-shrink-0 text-lg text-white mt-5 mb-1'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div className='basis-1/2 px-20'>
+                <h2 className='text-2xl font-semibold text-white'>Moringa News</h2>
+                <p className='w-[478px] flex flex-col flex-shrink-0 text-lg text-white mt-5 mb-1'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
         </div>
 
         {/* Body, prt 3 */}
