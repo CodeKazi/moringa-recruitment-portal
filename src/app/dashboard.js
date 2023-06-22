@@ -22,10 +22,53 @@ const Dashboard = () => {
                 </button>
             </div>
         </div>
+
+        {/* Body, part 1 */}
+        <div className='w-[1440px] h-[1544px] flex flex-col'>
+            <div className='basis-2/7'>
+                <div>
+                    <h1 className='text-6xl font-semibold text-moringa_blue opacity-80 ml-[165px] mt-[110px]'>
+                        Alumni Portal
+                    </h1>
+                </div>
+                <div>
+                    <p className='flex flex-col flex-shrink-0 w-[608px] text-xl text-black/75 ml-[165px] mt-[10px]'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </div>
+                <div className='flex h-20 flex-col justify-between items-center flex-shrink-0 w-[624px] px-[20px] py-[10px] rounded-xl ml-[45px] mt-[10px]'>
+                    <form class="w-full max-w-sm">
+                    <div class="flex items-center border-[1px] border-black/25 w-[427.5px] h-[70px] flex-shrink-0 px-3 py-0 rounded-md">
+                        <input class="bg-transparent border-[1px] border-black/25 w-full h-12 text-gray-700 mr-3 py-1 px-2 leading-tight rounded-md type='text'"/>
+                        <button class="basis-1/5 h-12 flex-shrink-0 bg-[#FA510F]  border-[#FA510F]  text-md border-4 text-white py-0 px-2 rounded" type="button">
+                        Search
+                        </button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div className='bg-[#585858] basis-1/7 flex items-center justify-center'>
+                <h1 className='text-4xl text-white'>Our career day events... & logos Area</h1>
+            </div>
+            <div className='bg-[#484848] basis-4/7 flex items-center justify-center'>
+                <h1 className='text-4xl text-white'>Top Jobs Area</h1>
+            </div>
+        </div>
+
+        {/* Body, part 2 */}
+        <div className='bg-[#959595] w-[1440px] h-[334px] flex flex-row items-center justify-center'>
+            <h1 className='text-4xl text-white'>Moringa news Area</h1>
+        </div>
+
+        {/* Body, prt 3 */}
+        <div className='bg-[#848484] w-[1440px] h-[1371px] flex items-center justify-center'>
+            <h1 className='text-4xl text-white'>Recent jobs Area</h1>
+        </div>
+
         {/* Footer */}
         <div className='bg-[#484848] w-[1440px] h-[498px] flex flex-col flex-shrink-0'>
             <div className='bg-moringa_blue opacity-50 w-[1440px] h-[497.712px] inline-flex flex-row flex-shrink-0'>
-                <div className='bg-[#484848] basis-2/5'>
+                <div className=' basis-2/5'>
                     <div className='mt-[69px] ml-[66px]'>
                         <ul className='flex flex-col items-center'>
                             <li>
