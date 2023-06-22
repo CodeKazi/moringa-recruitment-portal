@@ -3,54 +3,67 @@ import React from 'react'
 const SignIn = () => {
   return (
     <div className='relative w-[1440px] h-[1024px] bg-white flex flex-col'>
-        <div className='absolute box-border flex flex-col items-start px-0 py-[165px] gap-10 w-[1440px] h-[80px] left-0 top-0 bg-[#ffffff] border-b-1 border-b-solid border-b-black border-b-opacity-25'>
-            <div className="w-[100px] h-[80px] bg-[url('/public/next.svg')] flex-none order-none self-stretch grow-0"/>
+        <div className='absolute box-border flex flex-col items-start px-0 py-[85px] gap-10 w-[1440px] h-[80px] left-0 top-0 bg-[#4f3f5f] border-b-1 border-b-solid border-b-black border-b-opacity-25'>
+            <div className="bg-[#8d8d8d] w-[100px] h-[80px] bg-[url('/public/next.svg')] flex-none order-none self-stretch grow-0"/>
         </div>
-        <div className='absolute box-border w-[790px] h-[655px] left-[325px] top-[211px] border-solid border-1 border-[#101f3c]'>
-            <div className=" w-[333px] h-[130px] left-[553px] top-[230px] bg-[url('/public/next.svg')]"/>
-            <form action='.' method='post' className='absolute inline-flex flex-col items-center justify-center'>
-                <label htmlFor="none"
-                    className='w-[118px] h-[44px] left-[450px] top-[360px] not-italic font-semibold text-3xl leading-[44px] text-[#101f3ccc] font-["inter"]'
-                >
+        <div className='bg-[#565656] relative flex flex-col items-center justify-center box-border w-[790px] h-[655px] left-[325px] top-[211px] border-solid border-1 border-[#101f3c]'>
+            <div className="bg-[#484848] w-[333px] h-[130px] bg-[url('/public/next.svg')]"/>
+            <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                <p className='w-32 text-4xl font-semibold tracking-normal text-left text-[#101F3CCC]'>
                     Sign In
-                </label>
-                <label htmlFor="email"
-                    className=' w-[32px] h-[6px] not-italic font-normal text-xl  leading-6 text-[#000000bf] font-["inter"]'
+                </p>
+                <form className="space-y-6" action="#" method="POST">
+                    <div>
+                    <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                        Email address
+                    </label>
+                    <div className="mt-2">
+                        <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        autoComplete="email"
+                        required
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        />
+                    </div>
+                    </div>
+
+                    <div>
+                    <div className="flex items-center justify-between">
+                        <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                        Password
+                        </label>
+                    </div>
+                    <div className="mt-2">
+                        <input
+                        id="password"
+                        name="password"
+                        type="password"
+                        autoComplete="current-password"
+                        required
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        />
+                    </div>
+                    </div>
+
+                    <div>
+                    <button
+                        type="submit"
+                        className="flex w-48 h-10 justify-center rounded-md bg-[#101f3c] px-3 py-1.5 text-sm font-semibold leading-6 text-white"
+                    >
+                        Sign in
+                    </button>
+                    </div>
+                </form>
+               </div> 
+            <div className='pt-2'>   
+                <a href='/signup'
+                    className='w-32 text-base font-normal leading-5 tracking-normal text-left text-black underline'
                 >
-                    Email Address
-                </label>
-                <input type="email"
-                    id="email"
-                    name="email"
-                    className='box-border w-[540px] h-[12px] rounded flex-none order-1 flex-grow-0 border-[#101f3ccc]'
-                ></input>
-                <label htmlFor="password"
-                    className='w-[32px] h-[6px] not-italic font-normal text-xl leading-6  text-[#000000bf] font-["inter"]'
-                >
-                    Password
-                </label>
-                <input type="password"
-                    id="password"
-                    name="password"
-                    className='box-border w-[540px] h-[12px] rounded flex-none order-1 flex-grow-0 border-[#101f3ccc]'
-                ></input>
-                <button type="submit"
-                    className='flex flex-col justify-center items-center w-48 h-16 left-[250px] top-[660px] px-10 py-[6px] bg-gray-900 rounded gap-10'
-                >
-                    <p class='w-[76px] h-[26px] not-italic font-medium text-xl leading-6 text-white  font-["inter"]'>
-                        Login
-                    </p>
-                    {/* Login */}
-                </button>
-            </form>
-            <a href='/signup'
-                className=' w-[32px] h-[5px] left-[450px] top-[724px] not-italic font-normal text-base leading-5 text-black underline font-["inter"]'
-            >
-                Forgot Password?
-            </a>
-        </div>
-        <div className=' box-border flex flex-col items-start px-0 py-[165px] gap-10 w-[1440px] h-[80px] left-0 top-0 bg-[#ffffff] border-b-1 border-b-solid border-b-black border-b-opacity-25'>
-            <div className="w-[100px] h-[80px] bg-[url('/public/next.svg')] flex-none order-none self-stretch grow-0"/>
+                    Forgot Password?
+                </a>
+            </div>
         </div>
     </div>
   )
