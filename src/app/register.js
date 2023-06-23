@@ -27,12 +27,12 @@ const Register = () => {
 
         <div className='inputs'>
           <label>Password</label>
-          <input type='password' required></input>
+          <input type='password'></input>
         </div>
 
         <div className='inputs'>
           <label>Confirm Password</label>
-          <input type='password' required></input>
+          <input type='password'></input>
           <p>Passwords do not match</p>
         </div>
 

@@ -70,3 +70,26 @@ p {
     padding: 10px 20px;
     color: #FFF;
 }
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 400px;
+        left: auto;
+        right: auto;
+        top: 50px;
+    }
+    
+    h2 {
+        margin-right: 0;
+    }
+    
+    .button {
+        margin-right: 4rem;
+    }
+    
+    input {
+        width: 100%;
+    }
+}
