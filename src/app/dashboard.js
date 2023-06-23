@@ -1,4 +1,5 @@
 import React from 'react'
+import TopJobsCard from '../../components/TopJobsCard'
 import {RiPhoneFill} from 'react-icons/ri'
 import {PiEnvelopeSimpleThin} from 'react-icons/pi'
 import {MdLocationOn} from 'react-icons/md'
@@ -84,28 +85,67 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#484848] basis-4/7 flex items-center justify-center'>
-                <h1 className='text-4xl text-white'>Top Jobs Area</h1>
+            <div className='bg-[#484848] basis-4/7 flex flex-col items-center justify-center'>
+                <div className='flex justify-between items-center w-[1108px] mt-10 mb-5'>
+                    <div>
+                        <p className='text-2xl font-semibold text-moringa_blue'>
+                            Top Jobs
+                        </p>
+                    </div>
+                    <div>
+                        <p className='text-lg text-moringa_blue'>
+                            View All
+                        </p>
+                        {/* mdi:ArrowRightThin */}
+                    </div>
+                </div>
+                <div>
+                <div className='grid grid-cols-2 gap-[52px] w-[1110px] items-start mb-10'>
+                    <TopJobsCard title='Senior Mobile Developer'
+                        description='Revolut is looking for mobile software developer to assist...'
+                        tags={['Android', 'Flutter']}
+                    />
+                    <TopJobsCard title='Fullstack Software Developer'
+                    description='Revolut is looking for fullstack software developer to handle...'
+                    tags={['Javascript', 'Python', 'React']}
+                    />       
+                    <TopJobsCard title='Senior Mobile Developer'
+                        description='Revolut is looking for mobile software developer to assist...'
+                        tags={['Android', 'Flutter']}
+                    />    
+                    <TopJobsCard title='Senior Mobile Developer'
+                        description='Revolut is looking for mobile software developer to assist...'
+                        tags={['Android', 'Flutter']}
+                    />
+                    <TopJobsCard title='Senior Mobile Developer'
+                        description='Revolut is looking for mobile software developer to assist...'
+                        tags={['Android', 'Flutter']}
+                    />
+                    <TopJobsCard title='Senior Mobile Developer'
+                        description='Revolut is looking for mobile software developer to assist...'
+                        tags={['Android', 'Flutter']}
+                    />
+                    </div>
             </div>
         </div>
 
         {/* Body, part 2 */}
         <div className='bg-moringa_blue opacity-80 w-[1440px] h-[334px] flex flex-row flex-shrink-0 items-center justify-center px-10'>
             <div className='basis-1/2 px-20'>
-                <h2 className='text-2xl font-semibold text-white'>Moringa News</h2>
+                <h2 className='text-2xl font-semibold text-white'>Morninga News</h2>
                 <p className='w-[478px] flex flex-col flex-shrink-0 text-lg text-white mt-5 mb-1'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
             <div className='basis-1/2 px-20'>
-                <h2 className='text-2xl font-semibold text-white'>Moringa News</h2>
+                <h2 className='text-2xl font-semibold text-white'>Morninga News</h2>
                 <p className='w-[478px] flex flex-col flex-shrink-0 text-lg text-white mt-5 mb-1'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
         </div>
 
-        {/* Body, prt 3 */}
+        {/* Body, part 3 */}
         <div className='bg-[#848484] w-[1440px] h-[1371px] flex items-center justify-center'>
             <h1 className='text-4xl text-white'>Recent jobs Area</h1>
         </div>
@@ -172,6 +212,7 @@ const Dashboard = () => {
             <div className='bg-moringa_blue w-[1440px] h-[46px] flex justify-center'>
                 <p className='text-white text-sm p-3'>&copy; 2022 Moringa School, All Rights Reserved</p>
             </div>
+        </div>
         </div>
     </div>
   )
