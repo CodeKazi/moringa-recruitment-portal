@@ -3,20 +3,20 @@ import React from 'react'
 const ResetPassword = () => {
   return (
     <div className='relative w-[1440px] h-[1024px] bg-white flex flex-col'>
-        <div className='bg-[#4f3f5f] absolute box-border flex flex-col items-start px-[100px] pt-3 pb-[100px] gap-10 w-[1440px] h-[80px] left-0 top-0 border-b-1 border-b-solid border-b-black border-b-opacity-25'>
-            <div className="bg-[#8d8d8d] w-[100px] h-[80px] bg-[url('/public/next.svg')] flex-none order-none self-stretch grow-0"/>
+        <div className=' absolute box-border flex flex-col items-start px-[100px] pt-3 pb-[100px] gap-10 w-[1440px] h-[80px] left-0 top-0 border-b-1 border-b-solid border-b-black border-b-opacity-25'>
+            <div className="w-[95px] h-[65px] bg-[url('/assets/moringa0.png')] flex-none order-none self-stretch grow-0"/>
         </div>
-        <div className='bg-[#565656] relative flex flex-col items-center justify-center box-border w-[790px] h-[655px] left-[325px] top-[211px] border-solid border-1 border-[#101f3c]'>
-            <div className="bg-[#484848] w-[333px] h-[130px] bg-[url('/public/next.svg')]"/>
+        <div className=' relative flex flex-col items-center justify-center border w-[790px] h-[655px] left-[325px] top-[211px] border-solid border-1 border-moringa_blue/25'>
+            <div className="w-[333px] h-[130px] bg-[url('/assets/moringa1.png')]"/>
             <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
                 <p className='h-10 text-3xl font-semibold tracking-normal text-left text-[#101F3CCC]'>
-                Reset Password
+                    Reset Password
                 </p>
                 <form className="space-y-6" action="#" method="POST">
                     <div>
                     <div className="flex items-center justify-between">
                         <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
-                        Enter new assword
+                            Enter new password
                         </label>
                     </div>
                     <div className="mt-2">
@@ -26,7 +26,7 @@ const ResetPassword = () => {
                         type="password"
                         autoComplete="current-password"
                         required
-                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-moringa_blue sm:text-sm sm:leading-6"
                         />
                     </div>
                     </div>
@@ -44,7 +44,7 @@ const ResetPassword = () => {
                         type="password"
                         autoComplete="current-password"
                         required
-                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-moringa_blue sm:text-sm sm:leading-6"
                         />
                     </div>
                     </div>

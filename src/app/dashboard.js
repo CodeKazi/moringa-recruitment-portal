@@ -37,10 +37,10 @@ const Dashboard = () => {
                     </p>
                 </div>
                 <div className='flex h-20 flex-col justify-between items-center flex-shrink-0 w-[624px] px-[20px] py-[10px] rounded-xl ml-[45px] mt-[10px]'>
-                    <form class="w-full max-w-sm">
-                    <div class="flex items-center border-[1px] border-black/25 w-[427.5px] h-[70px] flex-shrink-0 px-3 py-0 rounded-md">
-                        <input class="bg-transparent border-[1px] border-black/25 w-full h-12 text-gray-700 mr-3 py-1 px-2 leading-tight rounded-md type='text'"/>
-                        <button class="basis-1/5 h-12 flex-shrink-0 bg-[#FA510F]  border-[#FA510F]  text-md border-4 text-white py-0 px-2 rounded" type="button">
+                    <form className="w-full max-w-sm">
+                    <div className="flex items-center border-[1px] border-black/25 w-[427.5px] h-[70px] flex-shrink-0 px-3 py-0 rounded-md">
+                        <input className="bg-transparent border-[1px] border-black/25 w-full h-12 text-gray-700 mr-3 py-1 px-2 leading-tight rounded-md type='text'"/>
+                        <button className="basis-1/5 h-12 flex-shrink-0 bg-[#FA510F]  border-[#FA510F]  text-md border-4 text-white py-0 px-2 rounded" type="button">
                         Search
                         </button>
                     </div>
