@@ -3,6 +3,7 @@ import TopJobsCard from '../../components/TopJobsCard'
 import {RiPhoneFill} from 'react-icons/ri'
 import {PiEnvelopeSimpleThin} from 'react-icons/pi'
 import {MdLocationOn} from 'react-icons/md'
+import RecentJobsCard from '../../components/RecentJobsCard'
 
 const Dashboard = () => {
   return (
@@ -125,7 +126,7 @@ const Dashboard = () => {
                         description='Revolut is looking for mobile software developer to assist...'
                         tags={['Android', 'Flutter']}
                     />
-                    </div>
+                </div>
             </div>
         </div>
 
@@ -146,8 +147,90 @@ const Dashboard = () => {
         </div>
 
         {/* Body, part 3 */}
-        <div className='bg-[#848484] w-[1440px] h-[1371px] flex items-center justify-center'>
-            <h1 className='text-4xl text-white'>Recent jobs Area</h1>
+        <div className='bg-[#848484] w-[1440px] h-[1371px] flex flex-col items-center justify-center'>
+            <div className='flex flex-col justify-between items-center w-[1108px] mt-10 mb-5'>
+                <div className='flex justify-between items-center w-[1108px] mt-10 mb-[20px]'>
+                    <p className='text-2xl font-semibold text-moringa_blue'>
+                        Recent Jobs
+                    </p>
+                    <p className='text-lg text-moringa_blue'>
+                        View All
+                    </p>
+                    {/* mdi:ArrowRightThin */}
+                </div>
+                <div className='grid grid-cols-2 gap-[52px] w-[1110px] items-start mb-10'>
+                    <RecentJobsCard title='Senior Mobile Developer'
+                        location='Nairobi, Kenya'
+                        image='/assets/eqty.png'
+                        tags={['Android', 'Flutter']}
+                    />
+                    <RecentJobsCard title='Junior Mobile Developer'
+                        location='Nairobi, Kenya'
+                        image='/assets/toptal.png'
+                        tags={['Java', 'Flutter']}
+                    />
+                    <RecentJobsCard title='React Developer'
+                        location='Nairobi, Kenya'
+                        image='/assets/sanlam.png'
+                        tags={['Javascript', 'React']}
+                    />
+                    <RecentJobsCard title='Front End Developer'
+                        location='Nairobi, Kenya'
+                        image='/assets/little.png'
+                        tags={['Angular', 'GraphQl', 'REST', 'Bootstrap']}
+                    />
+                    <RecentJobsCard title='Product Manager'
+                        location='Nairobi, Kenya'
+                        image='/assets/eqty.png'
+                        tags={['Research', 'Marketing']}
+                    />
+                    <RecentJobsCard title='Internship'
+                        location='Mombasa, Kenya'
+                        image='/assets/im.png'
+                        tags={['DevOps', 'Cloud', 'AWS']}
+                    />
+                    <RecentJobsCard title='Software Engineer'
+                        location='Machakos, Kenya'
+                        image='/assets/scom.png'
+                        tags={['C++', 'C#', '.NET']}
+                    />
+                    <RecentJobsCard title='Junior Mobile Developer'
+                        location='Nairobi, Kenya'
+                        image='/assets/cellulant.png'
+                        tags={['Java', 'Android']}
+                    />
+                    <RecentJobsCard title='Senior UI/UX'
+                        location='Nairobi, Kenya'
+                        image='/assets/zindi.png'
+                        tags={['Figma', 'Adobe', 'Creative']}
+                    />
+                    <RecentJobsCard title='Junior Mobile Developer'
+                        location='Nairobi, Kenya'
+                        image='/assets/msft.png'
+                        tags={['Android', 'Flutter']}
+                    />
+                    <RecentJobsCard title='Senior Backend Developer'
+                        location='Kisumu, Kenya'
+                        image='/assets/andela.png'
+                        tags={['Python', 'Django']}
+                    />
+                    <RecentJobsCard title='Technical Mentor'
+                        location='Nairobi, Kenya'
+                        image='/assets/moringa0.png'
+                        tags={['Ruby', 'Rails']}
+                    />
+                    <RecentJobsCard title='PHP Developer'
+                        location='Nairobi, Kenya'
+                        image='/assets/eqty.png'
+                        tags={['Laravel', 'PHP']}
+                    />
+                    <RecentJobsCard title='Python Developer'
+                        location='Eldoret, Kenya'
+                        image='/assets/toptal.png'
+                        tags={['Python', 'Flask']}
+                    />
+                </div>
+            </div>
         </div>
 
         {/* Footer */}
