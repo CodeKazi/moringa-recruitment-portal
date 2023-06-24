@@ -3,7 +3,7 @@ import React from 'react'
 const TopJobsCard = ({title, description, tags}) => {
   return (
     <div className='flex h-48 p-5 flex-row justify-between items-center border border-moringa_blue/25 border-solid'>
-        <div className="max-w-sm rounded overflow-hidden shadow-lg">
+        <div className="max-w-sm rounded overflow-hidden bg-gray-200 shadow-lg">
             <div className="px-6 py-4">
                 <p className="mb-2 text-xl font-medium text-moringa_blue">
                     {title}
