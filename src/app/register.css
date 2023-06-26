@@ -1,0 +1,95 @@
+body {
+     background: #F5F5F5;
+}
+
+.container {
+    position: absolute;
+    height: 550px;
+    width: 400px; 
+    left: 400px;
+    top: 50px;
+    border-radius: 5px;
+    border: 1px solid rgba(16, 31, 60, 0.25);
+}
+
+h2 {
+    font-family: Inter;
+    font-weight: 550;
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+    margin-right: 14rem;
+    color: rgba(16, 31, 60, 0.8);
+}
+
+form {
+    display: flex;  
+    flex-direction: column; 
+    align-items: center;
+}
+
+.inputs {
+    margin-top: 8px;
+}
+
+label {
+    display: block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+input {
+    box-sizing: border-box;
+    padding: 7px;
+     width: 300px;
+    font-size: 16px;
+    border: 1px solid rgba(16, 31, 60, 0.25);
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+p {
+    margin-top: 0.5px;
+    font-size: 10px;
+    font-weight: 300;
+    color: #CF1616;
+
+}
+.button {
+    width: 150px;
+    cursor: pointer;
+    background: #101F3C;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 9rem;
+    margin-top: 8px;
+    padding: 10px 20px;
+    color: #FFF;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 400px;
+        left: auto;
+        right: auto;
+        top: 50px;
+    }
+    
+    h2 {
+        margin-right: 0;
+    }
+    
+    .button {
+        margin-right: 4rem;
+    }
+    
+    input {
+        width: 100%;
+    }
+}
