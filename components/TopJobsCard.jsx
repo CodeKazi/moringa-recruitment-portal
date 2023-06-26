@@ -16,7 +16,7 @@ const TopJobsCard = ({title, description, tags}) => {
                 <div className="pt-4 pb-2 px-10 mt-8 flex flex-row bg-gray-300">
                     {tags.map((tag, i) => (
                         <span key={i}
-                            className="inline-block rounded-full px-3 py-1 text-sm font-normal text-black mr-2 mb-2 bg-orange-700"
+                        className={`inline-block rounded-full px-3 py-1 text-sm font-normal text-moringa_blue/80 mr-2 mb-2 ${i%2 === 0 ? "bg-gray-500" : "bg-orange-500}"}`}
                         >
                             {tag}
                         </span>
