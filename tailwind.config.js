@@ -14,6 +14,7 @@ module.exports = {
       },
       colors: {
         moringa_blue: "#101f3c",
+        moringa_orange: "#ff6900",
       },
       flexBasis: {
         '1/7': '14.2857143%',
