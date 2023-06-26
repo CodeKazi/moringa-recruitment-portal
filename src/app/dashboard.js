@@ -29,9 +29,10 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            {/* Body, part 1: alumni portal... */}
+            
             <div className='w-[1440px] h-[1544px] flex flex-col'>
-                <div className='basis-2/7 border-b'>
+                {/* Body, part 1: alumni portal & top jobs */}
+                <div className='basis-2/7 border-b mb-2.5'>
                     <div>
                         <h1 className='text-6xl font-semibold text-moringa_blue opacity-80 ml-[165px] mt-[110px]'>
                             Alumni Portal
@@ -42,7 +43,7 @@ const Dashboard = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                     </div>
-                    <div className='flex h-20 flex-col justify-between items-center flex-shrink-0 w-[624px] px-[20px] py-[10px] rounded-xl ml-[45px] mt-[10px]'>
+                    <div className='flex h-20 flex-col justify-between items-center flex-shrink-0 w-[624px] px-[20px] py-[10px] rounded-xl ml-[45px] mt-[10px] mb-5'>
                         <form className="w-full max-w-sm">
                             <div className="flex items-center border-[1px] border-black/25 w-[427.5px] h-[70px] flex-shrink-0 px-3 py-0 rounded-md">
                                 <input className="bg-transparent border-[1px] border-black/25 w-full h-12 text-gray-700 mr-3 py-1 px-2 leading-tight rounded-md type='text'" />
@@ -63,8 +64,8 @@ const Dashboard = () => {
                         ))}
                     </div>
                 </div>
-                <div className='bg-[#484848] basis-4/7 flex flex-col items-center justify-center'>
-                    <div className='flex justify-between items-center w-[1108px] mt-10 mb-5'>
+                <div className='basis-4/7 flex flex-col items-center justify-center'>
+                    <div className='flex justify-between items-center w-[1108px] mt-10 mb-10'>
                         <div>
                             <p className='text-2xl font-semibold text-moringa_blue'>
                                 Top Jobs
@@ -92,7 +93,7 @@ const Dashboard = () => {
                     </div>
                 </div>
 
-                {/* Body, part 2: morninga news...*/}
+                {/* Body, part 2: morninga news*/}
                 <div className='bg-moringa_blue opacity-80 w-[1440px] h-[334px] flex flex-row flex-shrink-0 items-center justify-center px-10'>
                     <div className='basis-1/2 px-20'>
                         <h2 className='text-2xl font-semibold text-white'>Morninga News</h2>

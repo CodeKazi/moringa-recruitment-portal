@@ -2,32 +2,32 @@ import React from 'react'
 
 const TopJobsCard = ({title, description, tags}) => {
   return (
-    <div className='flex h-48 p-5 justify-between items-center rounded border border-moringa_blue/25 border-solid'>
-        <div className='flex justify-between items-center w-[498px]'>
-            <div className="overflow-hidden shadow-lg">
-                <div className="px-6 py-4 m-5">
-                    <p className="mb-2 text-xl font-medium text-moringa_blue">
+    <div className='flex h-52 p-20 m-15 justify-between items-center rounded border border-moringa_blue/25 border-solid'>
+        <div className='flex  w-[498px] p-2.5 m-2.5'>
+            <div className="flex flex-col p-2.5 m-2.5 items-start justify-center shadow-lg">
+                <div className="flex flex-col px-10 py-4 m-8">
+                    <p className="mb-2 mt-5 text-xl font-medium text-moringa_blue">
                         {title}
                     </p>
                     <p className="flex flex-col flex-shrink-0 w-[350px] text-base text-black/75">
                         {description}
                     </p>
                 </div>
-                <div className="px-6 pt-4 pb-2">
+                <div className="pt-4 pb-2 px-10 mt-8 flex flex-row bg-gray-300">
                     {tags.map((tag, i) => (
                         <span key={i}
-                            className="inline-block rounded-full px-3 py-1 text-sm font-semibold text-moringa_blue/80 mr-2 mb-2 bg-black"
+                            className="inline-block rounded-full px-3 py-1 text-sm font-normal text-black mr-2 mb-2 bg-orange-700"
                         >
                             {tag}
                         </span>
                     ))}
                 </div>
             </div>
-            <div className='flex basis-2/5 justify-center'>
+            <div className='flex basis-2/5 justify-center items-center '>
                 <button type="submit"
                     name=""
                     id=""
-                    className='flex items-start px-10 py-40 gap-3 bg-moringa_orange/80 text-base font-medium text-moringa_blue'
+                    className='flex  h-10 items-center rounded-lg  px-10 py-40 gap-3 bg-[#FA510F]  border-[#FA510F] text-base font-medium text-white'
                 >
                     Apply
                 </button>
