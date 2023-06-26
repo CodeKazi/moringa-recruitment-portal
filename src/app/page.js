@@ -8,7 +8,7 @@ export default function Home() {
     <>
     <div className="container mx-auto h-full">
       <SignIn/>
-      {/*<ResetPassword/>*/} {/* default export in resetPassword1 and resetPassword2 is named ResetPassword */}
+      {/* <ResetPassword/> */}
       {/* <Dashboard/> */}
     </div>
     </>)
