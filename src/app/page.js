@@ -7,8 +7,9 @@ import Register from "./register"
 export default function Home() {
     return (
     <>
-    <div className="container mx-auto h-full">
-       <Register />
-    </div>
+      <Register/>
+//     <div className="container mx-auto h-full">
+//        <ResetPassword/>
+//     </div>
     </>)
 }

@@ -7,8 +7,8 @@ const Dashboard = () => {
   return (
     <div className='w-[1440px] h-[3827px] bg-white flex flex-col items-center'>
         {/* Header */}
-        <div className='bg-[#585858] inline-flex flex-row items-start justify-between px-[100px] pt-3 pb-[100px] gap-10 w-[1440px] h-[80px]'>
-            <div className="bg-[#8d8d8d] w-[100px] h-[80px] bg-[url('/public/next.svg')] flex-none order-none self-stretch grow-0"/>
+        <div className='inline-flex flex-row items-start justify-between px-[100px] pt-3 pb-[80px] gap-10 w-[1440px] h-[80px] border-b'>
+            <div className="w-[95px] h-[65px] bg-[url('/assets/moringa0.png')] flex-none order-none self-stretch grow-0 mt-5"/>
             <div className='bg=[#0d0d0d] w-[200px] h-[80px] flex flex-row items-center justify-between'>
                 <a className='text-2xl text-black opacity-75'>Home</a>
                 <a className='text-2xl font-medium text-black opacity-75'>Jobs</a>
@@ -16,7 +16,7 @@ const Dashboard = () => {
             <div className='mt-5'>
                 <button
                     type="submit"
-                    className="flex items-start rounded-md bg-moringa_blue opacity-50 px-3 py-1.5 text-md font-bold leading-6 text-white"
+                    className="flex items-start rounded-md bg-moringa_blue/80 px-3 py-1.5 text-md font-bold leading-6 text-white"
                 >
                     Profile
                 </button>
@@ -25,7 +25,7 @@ const Dashboard = () => {
 
         {/* Body, part 1 */}
         <div className='w-[1440px] h-[1544px] flex flex-col'>
-            <div className='basis-2/7'>
+            <div className='basis-2/7 border-b'>
                 <div>
                     <h1 className='text-6xl font-semibold text-moringa_blue opacity-80 ml-[165px] mt-[110px]'>
                         Alumni Portal
@@ -47,8 +47,42 @@ const Dashboard = () => {
                     </form>
                 </div>
             </div>
-            <div className='bg-[#585858] basis-1/7 flex items-center justify-center'>
-                <h1 className='text-4xl text-white'>Our career day events... & logos Area</h1>
+            <div className='basis-1/7 flex items-center justify-center border-b flex-col'>
+                <div className='w-[473px] flex flex-col flex-shrink-0 text-center text-lg text-black/75 mt-10'>
+                    Our Career Day events and recruitment drives have helped over 85% of our core graduates find meaningful employment within 6-months post-graduation
+                </div>
+                <div className='grid grid-cols-5 gap-[52px] w-[1110px] items-start mb-10'>
+                    <div className='flex'>
+                        <img src='/assets/msft1.png'/>
+                    </div>
+                    <div className='flex'>
+                        <img src='/assets/scom1.png'/>
+                    </div>
+                    <div className='flex'>
+                        <img src='/assets/andela1.png'/>
+                    </div>
+                    <div className='flex'>
+                        <img src='/assets/cellulant1.png'/>
+                    </div>
+                    <div className='flex'>
+                        <img src='/assets/eqty1.png'/>
+                    </div>
+                    <div className='flex'>
+                        <img src='/assets/little1.png'/>
+                    </div>
+                    <div className='flex'>
+                        <img src='/assets/im1.png'/>
+                    </div>
+                    <div className='flex'>
+                        <img src='/assets/zindi1.png'/>
+                    </div>
+                    <div className='flex'>
+                        <img src='/assets/sanlam1.png'/>
+                    </div>
+                    <div className='flex'>
+                        <img src='/assets/toptal1.png'/>
+                    </div>
+                </div>
             </div>
             <div className='bg-[#484848] basis-4/7 flex items-center justify-center'>
                 <h1 className='text-4xl text-white'>Top Jobs Area</h1>
