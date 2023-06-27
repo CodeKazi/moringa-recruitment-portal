@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import './modal.scss';
 
-const Modal1 = props => {
+const Modal2 = props => {
     const modalRef = useRef();
 
     useEffect(() => {
@@ -28,21 +28,21 @@ const Modal1 = props => {
     </div>;
 };
 
-export default Modal1;
+export default Modal2;
 
-export const ModalHeader1 = props => {
+export const ModalHeader2 = props => {
     return <div className="modal__header">
         {props.children}
     </div>
 }
 
-export const ModalBody1 = props => {
+export const ModalBody2 = props => {
     return <div className="modal__body">
         {props.children}
     </div>
 }
 
-export const ModalFooter1 = props => {
+export const ModalFooter2 = props => {
     return <div className="modal__footer">
         {props.children}
     </div>

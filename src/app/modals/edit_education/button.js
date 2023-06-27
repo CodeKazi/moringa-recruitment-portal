@@ -1,9 +1,9 @@
 import './button.scss';
 
-const Button1 = props => {
+const Button2 = props => {
     return <button onClick={props.onClick}>
         {props.children}
     </button>;
 };
 
-export default Button1;
+export default Button2;
