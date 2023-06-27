@@ -1,7 +1,7 @@
 body {
     background-color: white;
-    width: 50rem;
-    height: 75rem;
+    width: 52rem;
+    height: auto;
     border: 2px solid rgb(248, 241, 241);
     margin: 1rem auto;
 }
@@ -151,7 +151,7 @@ li {
     
 }
 
-@media (max-width: 576px) {
+@media (max-width: 200px) {
   .grid-container {
     margin-left: 1rem;
     grid-template-columns: repeat(1, 1fr);

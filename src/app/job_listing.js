@@ -1,5 +1,7 @@
 import React from 'react'
 import "./job_listing.css"
+import { recentJobs } from './recentjobs'
+console.log(recentJobs)
 
 const JobListing = () => {
   return (
@@ -14,7 +16,7 @@ const JobListing = () => {
         <div className='home'>
           <span>Home</span>
           <span className='ml-4'>Jobs</span>
-      
+
         </div>
 
         <div className='profile-btn'>
@@ -28,7 +30,7 @@ const JobListing = () => {
         </div>
 
         <div className='controls mt-8'>
-          <p className='job'>Job title or keyword <hr  className='mb-5'/></p>
+          <p className='job'>Job title or keyword <hr className='mb-5' /></p>
           <p className='location'>Location <hr /></p>
           <button className='search mt-0'>Search</button>
         </div>
@@ -136,9 +138,49 @@ const JobListing = () => {
           </div>
 
           <div className='grid-container p-3'>
+
+            {recentJobs.map((card, i) => (
+              <div key={i} className='grids flex' >
+                
+                <div className='flex items-center'>
+                  <img src={card.image} alt='Images' />
+                  {/* <p> Images </p> */}
+                </div>
+                <div className='ml-7 mt-3'>
+                  <p className='text-base'>{card.title}</p>
+                  <p className='text-base'>{card.location}</p>
+                  <div>
+                    <span className='language'>{card.tags[0]}</span>
+                    <span className='framework'>{card.tags[1]}</span>
+                  </div>
+                  
+                </div>
+                </div>
+              
+            ))}
+
+
             <div className='grids flex'>
               <div className='flex items-center'>
-                {/* To be replaced with the actual logo */}
+                {/* <img {recentJobs[0].image}  alt="logo"/> */}
+                <p className='font-semibold ml-3'>Andela</p>
+              </div>
+              <div className='ml-7 mt-3' >
+                <p className='text-base'>{recentJobs[0].title}</p>
+                <p className='text-base'>{recentJobs[0].location}</p>
+                <div>
+                  <span className='language'>{recentJobs[0].tags[0]}</span>
+                  <span className='framework'>{recentJobs[0].tags[1]}</span>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div className='grids flex'>
+              <div className='flex items-center'>
+                <img src='./public/assets/andela.png' />
                 <p className='font-semibold ml-3'>Andela</p>
               </div>
               <div className='ml-7 mt-3' >
@@ -206,7 +248,7 @@ const JobListing = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className='grids flex'>
               <div className='flex items-center'>
                 {/* To be replaced with the actual logo */}
@@ -264,7 +306,7 @@ const JobListing = () => {
               </div>
             </div>
 
-            
+
             <div className='grids flex'>
               <div className='flex items-center'>
                 {/* To be replaced with the actual logo */}
