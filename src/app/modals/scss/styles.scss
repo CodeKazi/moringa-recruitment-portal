@@ -1,0 +1,36 @@
+form {
+    margin: 5rem auto 0;
+    width: 24rem;
+  
+
+  
+    div,
+    select {
+      margin-bottom: 1.5rem;
+      width: inherit;
+    }
+  
+    input,
+    select {
+      padding: 0 0.5rem;
+      width: inherit;
+      height: 2rem;
+      border-radius: 4px;
+      border: none;
+      box-sizing: border-box;
+    }
+  
+    input[type="submit"] {
+      height: 2.5rem;
+      font-size: 1rem;
+      color: #fff;
+      background: #0971f1;
+      cursor: pointer;
+    }
+  
+    p {
+      margin-top: 0.5rem;
+      color: #ff9900;
+    }
+  }
+  
