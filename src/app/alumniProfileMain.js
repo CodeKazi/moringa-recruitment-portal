@@ -3,6 +3,7 @@ import AlumniNavbar from '../../components/AlumniNavbar'
 import AlumProfileHeadline from '../../components/AlumProfileHeadline'
 import AlumProfileBody from '../../components/AlumProfileBody'
 import AlumniFooter from '../../components/AlumniFooter'
+import { alumProfile } from '../../cardData/alumProfile'
 
 const AlumniProfileMain = () => {
   return (
@@ -13,8 +14,13 @@ const AlumniProfileMain = () => {
             <AlumniNavbar/>
         </div>
         {/* Pro pic headline section */}
-        <div className='bg-[#585858] flex basis-81/500'>
-            <AlumProfileHeadline/>
+        <div className='bg-moringa_blue/80 flex basis-81/500'>
+            <AlumProfileHeadline
+                name={alumProfile.headline.name}
+                title={alumProfile.headline.title}
+                location={alumProfile.headline.location}
+                image={alumProfile.headline.imageSrc}
+            />
         </div>
         {/* profile info and edit button*/}
         <div className='bg-[#484848] flex flex-row basis-4767/10000'>
