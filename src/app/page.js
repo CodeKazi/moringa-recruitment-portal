@@ -1,15 +1,17 @@
-//import Register from "./register"
+// import Register from "./register"
 // import JobListing from "./job_listing"
 // import JobInfo from "./job_listing2"
- import ApplyModal from "./applymodal"
+// import ApplyModal from "./applymodal"
+// import ResetPassword from "./resetPassword2"
+// import ResetPassword from "./resetPassword1"
+// import Dashboard from "./dashboard"
+// import AlumniProfileMain from "./alumniProfileMain"
+import SignIn from "./signin"
 
 export default function Home() {
   return (
-    <main >
-      <ApplyModal /> 
-       {/* <Register /> */}
-      {/* <JobInfo /> */}
-      {/* <JobListing /> */}
+    <main>
+       <SignIn />
     </main>
   )
 }
