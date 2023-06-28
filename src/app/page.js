@@ -17,11 +17,14 @@ import Modal3, { ModalBody3, ModalFooter3, ModalHeader3 } from './modals/edit_ex
 import Modal2, { ModalBody2, ModalFooter2, ModalHeader2 } from './modals/edit_education/modal';
 import React, { useState } from "react";
 import { FormControl} from '@mui/material';
+import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import "./modals/scss/styles.scss";
 import "./modals/scss/styles.css";
+import Paper from '@mui/material/Paper';
+import { styled } from '@mui/material/styles';
 
 
 
@@ -38,7 +41,7 @@ export default function Home() {
 
 
    
- 
+
 
     return (
       <Box>
@@ -61,23 +64,23 @@ export default function Home() {
       <Box>
 
       <div className='input-Fields'>
-      <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+      <TextField sx={{width: 400}} id="outlined-basic" label="Title" variant="outlined" />
       </div>
       </Box>
       <Box>
       
     <div className='input-Fields'>
-     <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+     <TextField sx={{width: 400}} id="outlined-basic" label="Last Name" variant="outlined" />
      </div>
     </Box>
       <div className='input-Fields'>
       
-      <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+      <TextField sx={{width: 400}} id="outlined-basic" label="Headline" variant="outlined" />
 
       </div>
       <div className='input-Fields'>
     
-      <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+      <TextField sx={{width: 400}} id="outlined-basic" label="Location" variant="outlined" />
      
             </div>
 
@@ -115,19 +118,38 @@ Save
 </ModalHeader2>
 </div>
                 <ModalBody2 className="form-inputs">
-               
+                
                <div className='input-Fields'>
-                <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+               <Stack spacing={2}>
+              
+                <TextField sx={{width: 400}} id="outlined-basic" label="Institution" variant="outlined" />
+               
+                 </Stack>
                </div>
+               <Stack direction="row" spacing={0.5}> 
                <div className='input-Fields'>
               
-                <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+                <TextField sx={{width: 200}} id="outlined-basic" label="Start Date" variant="outlined" />
              </div>
              <div className='input-Fields'>
-              <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+              <TextField sx={{width: 200}} id="outlined-basic" label="Outlined" variant="outlined" />
             </div> 
+            </Stack> 
+            <Stack direction="row" spacing={0.5}> 
             <div className='input-Fields'>
-           <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+           
+             <TextField sx={{width: 200}} id="outlined-basic" label="Stop Date" variant="outlined" />
+          </div>
+          <div className='input-Fields'>
+           <TextField sx={{width: 200}} id="outlined-basic" label="Outlined" variant="outlined" />
+         </div> 
+         </Stack> 
+            <div className='input-Fields'>
+            <Stack spacing={2}> 
+           
+           <TextField sx={{width: 400}} id="outlined-basic" label="Location" variant="outlined" />
+           
+           </Stack>
                 </div>
              
                 </ModalBody2>
@@ -160,16 +182,31 @@ Save
 </div>
                 <ModalBody3 className="form-inputs">
                <div className='input-Fields'>
-                <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+                <TextField sx={{width: 400}} id="outlined-basic" label="Title" variant="outlined" />
 </div>
 <div className='input-Fields'>
-            <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+            <TextField sx={{width: 400}} id="outlined-basic" label="Company Name" variant="outlined" />
           </div>
-         <div className='input-Fields'>
-          <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+          <Stack direction="row" spacing={0.5}> 
+          <div className='input-Fields'>
+         
+           <TextField sx={{width: 200}} id="outlined-basic" label="Stop Date" variant="outlined" />
         </div>
         <div className='input-Fields'>
-        <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+         <TextField sx={{width: 200}} id="outlined-basic" label="Outlined" variant="outlined" />
+       </div> 
+       </Stack> 
+       <Stack direction="row" spacing={0.5}> 
+       <div className='input-Fields'>
+      
+        <TextField sx={{width: 200}} id="outlined-basic" label="Start Date" variant="outlined" />
+     </div>
+     <div className='input-Fields'>
+      <TextField sx={{width: 200}} id="outlined-basic" label="Outlined" variant="outlined" />
+    </div> 
+    </Stack> 
+        <div className='input-Fields'>
+        <TextField sx={{width: 400}} id="outlined-basic" label="Location" variant="outlined" />
         </div>
 
                
@@ -205,7 +242,7 @@ Save
          </div>
          <ModalBody1 className="form-inputs">
        <div className='input-Fields'>
-        <TextField sx={{width: 400}} rows={4} id="filled-multiline-static"  label="Multiline"
+        <TextField sx={{width: 400}} rows={4} id="filled-multiline-static"  label="About"
           multiline  variant = "outlined" />
         </div>
 
