@@ -20,8 +20,7 @@ const ApplyModal = () => {
 
           <div className='contact-info'>
             <h4 className='text-lg font-medium mb-2'>Contact Information</h4>
-            {/* To be replaced with the applicants photo */}
-            <p className='mb-3'>Profile</p>
+            <img src='./assets/Ismaili.png' alt='User Profile' className='mb-3' />
             <p className='text-base font-medium mb-2'>Ismaili Sarr</p>
           </div>
           <div>
