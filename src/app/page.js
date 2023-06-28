@@ -16,8 +16,12 @@ import Modal1, { ModalBody1, ModalFooter1, ModalHeader1 } from './modals/edit_ab
 import Modal3, { ModalBody3, ModalFooter3, ModalHeader3 } from './modals/edit_experience/modal';
 import Modal2, { ModalBody2, ModalFooter2, ModalHeader2 } from './modals/edit_education/modal';
 import React, { useState } from "react";
-import { useForm } from "react-cool-form";
+import { FormControl} from '@mui/material';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import TextField from '@mui/material/TextField';
 import "./modals/scss/styles.scss";
+import "./modals/scss/styles.css";
 
 
 
@@ -29,22 +33,16 @@ export default function Home() {
   const [showModal2, setShowModal2] = useState(false);
   const [showModal3, setShowModal3] = useState(false);
 
-// const styled = {
-//   border-top: 3px solid #bbb;
-// }
+
 
 
 
    
-  const { form, use } = useForm({
-    defaultValues: { firstName: "", lastName: "", framework: "" },
-    onSubmit: (values) => alert(JSON.stringify(values, undefined, 2))
-  });
-  const errors = use("errors");
+ 
 
     return (
-      <div>
-        <div className='editheadline'>
+      <Box>
+        <div>
             <Button onClick={() => setShowModal(true)}>
                 Edit headline
             </Button>
@@ -55,40 +53,38 @@ export default function Home() {
             >
 <div style={{borderBottom: '2px solid grey'}}>
 <ModalHeader  className= "solid">
-<h2>Edit headline</h2>
+<Typography variant="h4">Edit headline</Typography>
 </ModalHeader>
 </div>
-                <ModalBody>
-                <form ref={form} noValidate>
-      <div>
-<label>Title:
+                <ModalBody className="form-inputs">
+                <FormControl>
+      <Box>
 
-<input name="firstName" placeholder="First name" required />
-{errors.firstName && <p>{errors.firstName}</p>}</label>
+      <div className='input-Fields'>
+      <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
       </div>
-      <div>
-      <label>  Last Name  
+      </Box>
+      <Box>
+      
+    <div className='input-Fields'>
+     <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+     </div>
+    </Box>
+      <div className='input-Fields'>
+      
+      <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
 
-      <input name="firstName" placeholder="First name" required />
-      {errors.firstName && <p>{errors.firstName}</p>}</label>
-    </div>
-      <div>
-<label> Headline
-<input name="lastName" placeholder="Last name" required />
-{errors.lastName && <p>{errors.lastName}</p>}
-</label>
       </div>
-      <div>
-      <label> Location
-      <input name="lastName" placeholder="Last name" required />
-      {errors.lastName && <p>{errors.lastName}</p>}
-      </label>
+      <div className='input-Fields'>
+    
+      <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+     
             </div>
 
       
 
     
-    </form>
+            </FormControl> 
                 </ModalBody>
 <ModalFooter>
 <Button2 onClick={() => setShowModal(false)}>
@@ -104,7 +100,7 @@ Save
 
 
 
-        <div className='editeducation'>
+        <div>
             <Button2 onClick={() => setShowModal2(true)}>
                 Edit education
             </Button2>
@@ -115,29 +111,25 @@ Save
             >
 <div style={{borderBottom: '2px solid grey'}}>
 <ModalHeader2>
-<h2>Edit education</h2>
+<Typography variant="h4">Edit education</Typography>
 </ModalHeader2>
 </div>
-                <ModalBody2>
-                <form>
-                <label>
-                  Title:
-                  <input type="text" name="firstName" />
-                </label>
-                <label>
-                Last Name:
-                <input type="text" name="firstName" />
-              </label>
-              <label>
-              Headline:
-              <input type="text" name="firstName" />
-            </label>
-            <label>
-            Location:
-            <input type="text" name="firstName"/>
-          </label>
-                
-              </form>
+                <ModalBody2 className="form-inputs">
+               
+               <div className='input-Fields'>
+                <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+               </div>
+               <div className='input-Fields'>
+              
+                <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+             </div>
+             <div className='input-Fields'>
+              <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+            </div> 
+            <div className='input-Fields'>
+           <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+                </div>
+             
                 </ModalBody2>
                 <ModalFooter2>
                     <Button2 onClick={() => setShowModal2(false)}>
@@ -152,7 +144,7 @@ Save
 
 
 
-        <div className='editexperience'>
+        <div>
             <Button3 onClick={() => setShowModal3(true)}>
                 Edit experience
             </Button3>
@@ -163,39 +155,25 @@ Save
             >
 <div style={{borderBottom: '2px solid grey'}}>
 <ModalHeader3 className= "solid">
-<h2>Edit experience</h2>
+<Typography variant="h4">Edit experience</Typography>
 </ModalHeader3>
 </div>
-                <ModalBody3>
-                <form>
-                <label>
-                  Title:
-                  <input type="text"name="firstName" />
-                </label>
-                <label>
-                Company Name:
-                <input type="text" name="firstName" />
-              </label>
-              <label>
-              Company Name:
-              <input type="text" name="firstName" />
-            </label>
-            
-              <label>
-              Start Date:
-              <input type="date" name="name" />
-            </label>
-            <label>
-            Stop Date:
-            <input type="date" name="name" />
-          </label>
-          
-            <label>
-            Location:
-            <input type="text" name="firstName" />
-          </label>
+                <ModalBody3 className="form-inputs">
+               <div className='input-Fields'>
+                <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+</div>
+<div className='input-Fields'>
+            <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+          </div>
+         <div className='input-Fields'>
+          <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+        </div>
+        <div className='input-Fields'>
+        <TextField sx={{width: 400}} id="outlined-basic" label="Outlined" variant="outlined" />
+        </div>
+
                
-              </form>
+              
                 </ModalBody3>
                 <ModalFooter3>
                     <Button3 onClick={() => setShowModal3(false)}>
@@ -210,7 +188,7 @@ Save
 
 
 
-        <div className='editabout'>
+        <div>
             <Button1 onClick={() => setShowModal1(true)}>
                 Edit about
             </Button1>
@@ -221,21 +199,20 @@ Save
             >
          <div style={{borderBottom: '2px solid grey'}}>
          <ModalHeader1 >
-         <h2>Edit about</h2>
+         <Typography variant="h4">Edit about</Typography>
      </ModalHeader1>
     
          </div>
-         <ModalBody1>  
-                <form>
-                <label>
-                  About:
-                  <textarea type="text" name="firstName"  rows={9} cols={40}/>
-                </label>
+         <ModalBody1 className="form-inputs">
+       <div className='input-Fields'>
+        <TextField sx={{width: 400}} rows={4} id="filled-multiline-static"  label="Multiline"
+          multiline  variant = "outlined" />
+        </div>
 
 
 
                 
-              </form>
+             
                 </ModalBody1>
                 <ModalFooter1>
                     <Button1 onClick={() => setShowModal1(false)}>
@@ -244,7 +221,7 @@ Save
                 </ModalFooter1>
             </Modal1>
         </div>
-        </div>
+        </Box>
     );
 
 
