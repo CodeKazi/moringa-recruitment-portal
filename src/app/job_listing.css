@@ -1,7 +1,7 @@
 body {
     background-color: white;
-    width: 50rem;
-    height: 75rem;
+    width: 65rem;
+    height: auto;
     border: 2px solid rgb(248, 241, 241);
     margin: 1rem auto;
 }
@@ -10,7 +10,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0.5rem;
+   
 }
 
 .logo {
@@ -29,7 +29,6 @@ nav {
 .profile {
     display: flex;
     justify-content: flex-start;
-    margin-top: 0.1rem;
 }
 
 button {
@@ -37,7 +36,7 @@ button {
      width: 70px;
      font-size: 15px;
      border-radius: 5px;
-     margin-top: 0.3rem;
+     margin-top: 1.5rem;
      padding: 0.2rem;
      color: #FFF;
      cursor: pointer;
@@ -69,11 +68,11 @@ button {
 }
 
 .job hr {
-    width: 250px;
+    width: 300px;
 }
 
 .location hr {
-    width: 125px;
+    width: 150px;
 }
 
 .search {
@@ -143,7 +142,7 @@ li {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     gap: 25px;
-    margin-left: 8rem;
+    margin-left: 10rem;
 }
 
 .grids {
@@ -151,7 +150,7 @@ li {
     
 }
 
-@media (max-width: 576px) {
+@media (max-width: 268px) {
   .grid-container {
     margin-left: 1rem;
     grid-template-columns: repeat(1, 1fr);
@@ -170,37 +169,21 @@ li {
     
 } 
 
-.language {
-    font-size: 13px;
-    background-color:rgba(51, 72, 114, 0.8);
-    border-radius: 24px;
-    /* margin-left: 4rem; */
-    padding: 1px;
-    cursor: pointer;
-}
-
-.framework {
-    font-size: 13px;
-    background-color:rgba(255, 105, 0, 0.8);
-    border-radius: 24px;
-    margin-left: 0.3rem;
-    padding: 1px;
-    cursor: pointer;
-}
-
 .pagination {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+   
 }
 
 .pagination a {
     text-decoration: none;
     border: 1px solid black;
-    padding: 0.5px 6px;
     margin:  5px;
     color: black;
+    width: 28px;
+    height: 28px
+     
 }
 
 .footer {

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./job_listing.css"
+import { recentJobs } from '../../cardData/recentjobs'
 
 const JobListing = () => {
   return (
@@ -7,14 +8,13 @@ const JobListing = () => {
 
       <nav>
         <div className='logo mt-1'>
-          {/* To be replaced with the actual logo */}
-          <p>Logo</p>
+          <img src='/assets/moringa0.png' alt='Moringa School' />
         </div>
 
         <div className='home'>
-          <span>Home</span>
-          <span className='ml-4'>Jobs</span>
-      
+          <span className='mt-4'>Home</span>
+          <span className='ml-4 mt-4'>Jobs</span>
+
         </div>
 
         <div className='profile-btn'>
@@ -28,7 +28,7 @@ const JobListing = () => {
         </div>
 
         <div className='controls mt-8'>
-          <p className='job'>Job title or keyword <hr  className='mb-5'/></p>
+          <p className='job'>Job title or keyword <hr /></p>
           <p className='location'>Location <hr /></p>
           <button className='search mt-0'>Search</button>
         </div>
@@ -131,221 +131,51 @@ const JobListing = () => {
       <section className='center'>
         <div>
           <div className='center-titles'>
-            <h5 className='font-base'>All Jobs</h5>
-            <p>Sort by</p>
+            <h5 className='text-xl font-medium'>All Jobs</h5>
+            <p className='flex text-lg font-medium'>Sort By  <span className='ml-1 mt-0.5'><img src='./icons/majesticons_chevron-down-line.png' /></span></p>
           </div>
 
           <div className='grid-container p-3'>
-            <div className='grids flex'>
-              <div className='flex items-center'>
-                {/* To be replaced with the actual logo */}
-                <p className='font-semibold ml-3'>Andela</p>
-              </div>
-              <div className='ml-7 mt-3' >
-                <p className='text-base'>Frontend Developer</p>
-                <p className='text-base'>Mombasa, Kenya</p>
-                <div>
-                  <span className='language'>JavaScript</span>
-                  <span className='framework'>Angular</span>
-                </div>
-              </div>
-            </div>
-            <div className='grids flex'>
-              <div className='flex items-center'>
-                {/* To be replaced with the actual logo */}
-                <p className='font-semibold ml-3'>Sanlam</p>
-              </div>
-              <div className='ml-7 mt-3' >
-                <p className='text-base'>Frontend Developer</p>
-                <p className='text-base'>Mombasa, Kenya</p>
-                <div>
-                  <span className='language'>JavaScript</span>
-                  <span className='framework'>Angular</span>
-                </div>
-              </div>
-            </div>
-            <div className='grids flex'>
-              <div className='flex items-center'>
-                {/* To be replaced with the actual logo */}
-                <p className='font-semibold ml-3'>Andela</p>
-              </div>
-              <div className='ml-7 mt-3' >
-                <p className='text-base'>Frontend Developer</p>
-                <p className='text-base'>Mombasa, Kenya</p>
-                <div>
-                  <span className='language'>JavaScript</span>
-                  <span className='framework'>Angular</span>
-                </div>
-              </div>
-            </div>
-            <div className='grids flex'>
-              <div className='flex items-center'>
-                {/* To be replaced with the actual logo */}
-                <p className='font-semibold ml-3'>Sanlam</p>
-              </div>
-              <div className='ml-7 mt-3' >
-                <p className='text-base'>Frontend Developer</p>
-                <p className='text-base'>Mombasa, Kenya</p>
-                <div>
-                  <span className='language'>JavaScript</span>
-                  <span className='framework'>Angular</span>
-                </div>
-              </div>
-            </div>
-            <div className='grids flex'>
-              <div className='flex items-center'>
-                {/* To be replaced with the actual logo */}
-                <p className='font-semibold ml-3'>Andela</p>
-              </div>
-              <div className='ml-7 mt-3' >
-                <p className='text-base'>Frontend Developer</p>
-                <p className='text-base'>Mombasa, Kenya</p>
-                <div>
-                  <span className='language'>JavaScript</span>
-                  <span className='framework'>Angular</span>
-                </div>
-              </div>
-            </div>
-            
-            <div className='grids flex'>
-              <div className='flex items-center'>
-                {/* To be replaced with the actual logo */}
-                <p className='font-semibold ml-3'>Sanlam</p>
-              </div>
-              <div className='ml-7 mt-3' >
-                <p className='text-base'>Frontend Developer</p>
-                <p className='text-base'>Mombasa, Kenya</p>
-                <div>
-                  <span className='language'>JavaScript</span>
-                  <span className='framework'>Angular</span>
-                </div>
-              </div>
-            </div>
-            <div className='grids flex'>
-              <div className='flex items-center'>
-                {/* To be replaced with the actual logo */}
-                <p className='font-semibold ml-3'>Sanlam</p>
-              </div>
-              <div className='ml-7 mt-3' >
-                <p className='text-base'>Frontend Developer</p>
-                <p className='text-base'>Mombasa, Kenya</p>
-                <div>
-                  <span className='language'>JavaScript</span>
-                  <span className='framework'>Angular</span>
-                </div>
-              </div>
-            </div>
-            <div className='grids flex'>
-              <div className='flex items-center'>
-                {/* To be replaced with the actual logo */}
-                <p className='font-semibold ml-3'>Andela</p>
-              </div>
-              <div className='ml-7 mt-3' >
-                <p className='text-base'>Frontend Developer</p>
-                <p className='text-base'>Mombasa, Kenya</p>
-                <div>
-                  <span className='language'>JavaScript</span>
-                  <span className='framework'>Angular</span>
-                </div>
-              </div>
-            </div>
-            <div className='grids flex'>
-              <div className='flex items-center'>
-                {/* To be replaced with the actual logo */}
-                <p className='font-semibold ml-3'>Andela</p>
-              </div>
-              <div className='ml-7 mt-3' >
-                <p className='text-base'>Frontend Developer</p>
-                <p className='text-base'>Mombasa, Kenya</p>
-                <div>
-                  <span className='language'>JavaScript</span>
-                  <span className='framework'>Angular</span>
-                </div>
-              </div>
-            </div>
 
-            
-            <div className='grids flex'>
-              <div className='flex items-center'>
-                {/* To be replaced with the actual logo */}
-                <p className='font-semibold ml-3'>Andela</p>
-              </div>
-              <div className='ml-7 mt-3' >
-                <p className='text-base'>Frontend Developer</p>
-                <p className='text-base'>Mombasa, Kenya</p>
-                <div>
-                  <span className='language'>JavaScript</span>
-                  <span className='framework'>Angular</span>
-                </div>
-              </div>
-            </div>
-            <div className='grids flex'>
-              <div className='flex items-center'>
-                {/* To be replaced with the actual logo */}
-                <p className='font-semibold ml-3'>Sanlam</p>
-              </div>
-              <div className='ml-7 mt-3' >
-                <p className='text-base'>Frontend Developer</p>
-                <p className='text-base'>Mombasa, Kenya</p>
-                <div>
-                  <span className='language'>JavaScript</span>
-                  <span className='framework'>Angular</span>
-                </div>
-              </div>
-            </div>
-            <div className='grids flex'>
-              <div className='flex items-center'>
-                {/* To be replaced with the actual logo */}
-                <p className='font-semibold ml-3'>Sanlam</p>
-              </div>
-              <div className='ml-7 mt-3' >
-                <p className='text-base'>Frontend Developer</p>
-                <p className='text-base'>Mombasa, Kenya</p>
-                <div>
-                  <span className='language'>JavaScript</span>
-                  <span className='framework'>Angular</span>
-                </div>
-              </div>
-            </div>
-            <div className='grids flex'>
-              <div className='flex items-center'>
-                {/* To be replaced with the actual logo */}
-                <p className='font-semibold ml-3'>Andela</p>
-              </div>
-              <div className='ml-7 mt-3' >
-                <p className='text-base'>Frontend Developer</p>
-                <p className='text-base'>Mombasa, Kenya</p>
-                <div>
-                  <span className='language'>JavaScript</span>
-                  <span className='framework'>Angular</span>
-                </div>
-              </div>
-            </div>
+            {recentJobs.map((card, i) => (
+              <div key={i} className='grids flex' >
 
-            <div className='grids flex'>
-              <div className='flex items-center'>
-                {/* To be replaced with the actual logo */}
-                <p className='font-semibold ml-3'>Sanlam</p>
-              </div>
-              <div className='ml-7 mt-3' >
-                <p className='text-base'>Frontend Developer</p>
-                <p className='text-base'>Mombasa, Kenya</p>
-                <div>
-                  <span className='language'>JavaScript</span>
-                  <span className='framework'>Angular</span>
+                <div className='flex items-center'>
+                  <img src={card.image} alt='Logo' />
+                 
+                </div>
+                <div className='ml-7 mt-3'>
+                  <p className='text-lg font-medium'>{card.title}</p>
+                  <p className='text-base mb-2'>{card.location}</p>
+                  
+                   <div>
+                    {card.tags.map((tag, index) =>(
+                      <span key={index} className={`mr-3 mb-2 p-px rounded-3xl ${index % 2 === 0 ?  'bg-gray-500' : 'bg-orange-500' }`}>{tag}</span>
+
+              
+
+                    ))}
+                   </div>
+                    
+                  
+
                 </div>
               </div>
-            </div>
+
+            ))}
+
           </div>
         </div>
       </section>
 
-      <div className='pagination'>
-        <a href='#'>&laquo;</a>
-        <a href='#'>1</a>
-        <a href='#'>2</a>
-        <a href='#'>3</a>
-        <a href='#'>&raquo;</a>
+      <div className='pagination my-1'>
+        <a href='#'><img src='./icons/gg_push-chevron-left.png' /></a>
+        <a href='#'><img src='./icons/gg_chevron-left.png' /></a>
+        <a href='#' className='pl-2 font-medium'>1</a>
+        <a href='#' className='pl-2 font-medium'>2</a>
+        <a href='#' className='pl-2 font-medium'>3</a>
+        <a href='#'><img src='./icons/gg_chevron-right.png' /></a>
+        <a href='#'><img src='./icons/gg_push-chevron-right.png' /></a>
       </div>
 
       <section className='footer'>
