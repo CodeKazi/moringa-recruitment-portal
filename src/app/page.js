@@ -16,7 +16,6 @@ export default function Home() {
     <main>
     <div className="container mx-auto h-full">
        <SignIn/> 
-      <Dashboard/>
     </div>
     </main>
   )
