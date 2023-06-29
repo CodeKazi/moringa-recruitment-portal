@@ -6,6 +6,17 @@ body {
     margin: 1rem auto;
 }
 
+.btn {
+     background: rgba(16, 31, 60, 0.8);
+     width: 70px;
+     font-size: 15px;
+     border-radius: 5px;
+     margin-top: 1.5rem;
+     padding: 0.2rem;
+     color: #FFF;
+     cursor: pointer;
+}
+
 .first-section {
     background-color: rgba(16, 31, 60, 0.80);
 }
@@ -30,30 +41,42 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 30px;
-    margin: 1rem 6rem;
+    /* margin: 1rem 6rem; */
 }
 
 .grids {
     border: 1px solid black;
 }
 
-.language {
-    background-color: rgba(51, 72, 114, 0.8);
-    font-size: 15px;
-    border-radius: 22px;
-    padding: 3px;
-    font-size: 15px;
-    cursor: pointer;
+.footer {
+    height: 15rem;
+    background-color: rgba(16, 31, 60, 0.8);
+    color: #FFF;
 }
 
-.framework {
-    background-color: rgba(255, 105, 0, 0.8);
-    margin-left: 0.8rem;
-    border-radius: 22px;
-    padding: 2px;
-    font-size: 15px;
-    cursor: pointer;
+.footer-title {
+color: #FFF;
+text-align: center;
+font-size: 24px;
+font-family: Inter;
 }
 
+.footer-location {
+color: #FFF;
+text-align: center;
+font-size: 15px;
+font-family: Inter;
+}
+.contact {
+color: #FFF;
+text-align: center;
+font-size: 15px;
+font-family: Inter;
+}
 
-
+.last {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 16, 46, 0.8);
+}
