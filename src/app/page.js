@@ -1,8 +1,10 @@
 // import ResetPassword from "./resetPassword2"
 // import ResetPassword from "./resetPassword1"
 // import Dashboard from "./dashboard"
-import AlumniProfileMain from "./alumniProfileMain"
+// import AlumniProfileMain from "./alumniProfileMain"
 // import SignIn from "./signin"
+
+import AlumniJobInterviewPrep from "./alumniJobInterviewPrep";
 
 export default function Home() {
     return (
@@ -11,7 +13,8 @@ export default function Home() {
       {/* <SignIn/> */}
       {/* <ResetPassword/> */}
       {/* <Dashboard/> */}
-      <AlumniProfileMain/>
+      {/* <AlumniProfileMain/> */}
+      <AlumniJobInterviewPrep/>
     </div>
     </>)
 
