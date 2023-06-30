@@ -8,7 +8,7 @@ export const alumProfile = {
     about: {
         about: 'Lorem ipsum dolor sit amet consectetur. Parturient amet molestie blandit lacus dolor. Bibendum et egestas mauris consectetur amet. Tristique justo nec nam placerat netus. Ut phasellus magna etiam vitae. Et amet enim eget senectus egestas lectus nibh in. Id duis elit eget consequat ut cursus.'
     },
-    experience: new Array(
+    experience: [
         {
             title: 'Full-stack Web Developer',
             organisation: 'Sanlam Insurance',
@@ -23,7 +23,7 @@ export const alumProfile = {
             duration: '6  months',
             location: 'Nairobi, Kenya.',
         },
-    ),
+    ],
     education: [
         {
             organisation: 'Moringa School',

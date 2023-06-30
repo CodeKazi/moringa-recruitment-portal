@@ -5,8 +5,8 @@ import AlumniExperienceCard from './AlumniExperienceCard'
 import Image from 'next/image'
 
 const AlumProfileBody = () => {
-  const a = alumProfile.experience
-  console.log('object a', a[0], "type: ", typeof(a[0]))
+  // const a = alumProfile.experience
+  // console.log('object a', a[0], "type: ", typeof(a[0]))
   // a.forEach(i => console.log(i.title))
 
   return (
@@ -33,8 +33,9 @@ const AlumProfileBody = () => {
             </h1>
             <div className='flex flex-col'>
               {alumProfile.experience.map((obj, i) => (
-              <div key={i}>
+              <div >
               <AlumniExperienceCard
+                key={i}
                 title={obj.title}
                 organisation={obj.organisation}
                 fromto={obj.fromto}
@@ -51,8 +52,9 @@ const AlumProfileBody = () => {
               Education
             </h1>
             {alumProfile.education.map((obj, i) => (
-              <div key={i}>
+              <div>
               <AlumniEducationCard
+                key={i}
                 organisation={obj.organisation}
                 fromto={obj.fromto}
                 duration={obj.duration}
