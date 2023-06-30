@@ -5,7 +5,8 @@ const AlumProfileHeadline = ({
     image,
     name,
     title,
-    location
+    location,
+    editIcon
 }) => {
   return (
         <div className='flex flex-row items-center ml-[165px] gap-10'>
@@ -18,7 +19,13 @@ const AlumProfileHeadline = ({
             <p className='text-base font-medium text-white/80'>{location}</p>
           </div>
           <div className='flex basis-1/10 w-1/12 h-full mt-10 justify-end items-start'>
-            <Image src={'assets/material-symbols_edit-square-outline.svg'} width={24} height={24} className='flex-shrink-0'/>
+            { editIcon ? (
+                <Image src={editIcon} width={24} height={24} className='flex-shrink-0'/>
+            ) : (
+              <></>
+            )
+              
+              }
           </div>
         </div>
   )
