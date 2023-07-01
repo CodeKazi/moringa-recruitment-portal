@@ -9,6 +9,10 @@ const AlumProfileBody = () => {
   // console.log('object a', a[0], "type: ", typeof(a[0]))
   // a.forEach(i => console.log(i.title))
 
+  // alumProfile.experience.map((obj, i) => (
+  //   console.log(`object no. ${i}: title: ${obj.title}, fromto: ${obj.fromto}`)
+  //   ))
+
   return (
     <div className='flex flex-col'>
         <div className='flex flex-col'>
@@ -23,7 +27,7 @@ const AlumProfileBody = () => {
           </div>
           <div>
             <p className='flex flex-col flex-shrink-0 w-[635px]'>
-            {alumProfile.about}
+            {alumProfile.about.about}
             </p>
           </div>
         </div>
@@ -33,7 +37,10 @@ const AlumProfileBody = () => {
             </h1>
             <div className='flex flex-col'>
               {alumProfile.experience.map((obj, i) => (
-              <div >
+              <div key={i} >
+                {/* <p>{i}</p> */}
+                {console.log(obj.title)}
+                {/* {obj.title} */}
               <AlumniExperienceCard
                 key={i}
                 title={obj.title}

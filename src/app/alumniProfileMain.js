@@ -4,7 +4,7 @@ import AlumProfileHeadline from '../../components/AlumProfileHeadline'
 import AlumProfileBody from '../../components/AlumProfileBody'
 import AlumniFooter from '../../components/AlumniFooter'
 import { alumProfile } from '../../cardData/alumProfile'
-import editIcon from 'assets/material-symbols_edit-square-outline.svg'
+import editIcon from 'public/assets/material-symbols_edit-square-outline.svg'
 
 const AlumniProfileMain = () => {
   return (

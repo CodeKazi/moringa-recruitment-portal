@@ -10,13 +10,13 @@ import { appliedJobs } from '../../cardData/appliedJobs'
 const AlumniJobInterviewPrep = () => {
   return (
     //container
-    <div className='flex flex-col w-full lg:w-[1440px] h-full lg:h-[1727px] bg-white'>
+    <div className='flex flex-col w-full lg:w-[1440px] h-full lg:h-[2221px] bg-white'>
         {/* nav */}
         <div className='flex basis-23/500'>
             <AlumniNavbar/>
         </div>
         {/* headline */}
-        <div className='bg-moringa_blue/80 flex basis-81/500'>
+        <div className='bg-moringa_blue/80 flex basis-81/500 '>
             <AlumProfileHeadline
                 name={alumProfile.headline.name}
                 title={alumProfile.headline.title}
@@ -26,20 +26,26 @@ const AlumniJobInterviewPrep = () => {
             />
         </div >
         {/* body */}
-        <div className='bg-[#585858] flex flex-row basis-4767/10000'>
-        <div className='basis-2/7 ml-[165px]'>
+        <div className=' flex flex-row basis-4767/10000'>
+        <div className='basis-2/7 ml-[165px] mt-10'>
                 <ul className='flex flex-col justify-center text-2xl font-normal text-moringa_blue'>
-                    <li><a>Profile</a></li>
-                    <li><a>My Jobs</a></li>
-                    <li><a>Job Interview Prep</a></li>
+                    <li className='m-2'>
+                        <a>Profile</a>
+                    </li>
+                    <li className='m-2 font-bold'>
+                        <a>My Jobs</a>
+                    </li>
+                    <li className='m-2'>
+                        <a>Job Interview Prep</a>
+                    </li>
                 </ul>
             </div>
-            <div className='basis-5/7 flex-col'>
-                <div>
-                    <span>Applied</span>
-                    <span>Drafts</span>
+            <div className='basis-5/7 flex-col mt-10'>
+                <div className='flex flex-row basis-2 text-2xl not-italic  text-moringa_blue'>
+                    <span className='mx-2.5 font-semibold'>Applied</span>
+                    <span className='mx-2.5'>Drafts</span>
                 </div>
-                <div>
+                <div className='mt-4 flex flex-col w-full lg:w-[515px] '>
                     {appliedJobs.map((job, i) => (
                         <AppliedJobsCard
                             key={i}
@@ -48,6 +54,7 @@ const AlumniJobInterviewPrep = () => {
                             location={job.location}
                             applied={job.applied}
                             closeBtn={closeBtn}
+                            className='mb-20'
                         />
                     ))}
                 </div>
