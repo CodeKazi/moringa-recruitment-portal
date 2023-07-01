@@ -1,0 +1,27 @@
+body {
+    background-color: white;
+    width: 50rem;
+    height: auto;
+    border: 2px solid rgb(248, 241, 241);
+    margin: 1rem auto;
+}
+
+.cards {
+    width: 26rem;
+    
+}
+
+@media (max-width: 640px) {
+    .top-section {
+        padding: 8;
+    }
+    .container {
+        display: block;
+    }
+    .side-section {
+        margin-left: 3rem;
+    }
+    .mobile-br {
+        display: block;
+    }
+}
