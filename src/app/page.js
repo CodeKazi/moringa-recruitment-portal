@@ -10,7 +10,7 @@
 // import AlumniNavbar from "../../components/AlumniNavbar"
 // import AlumniFooter from "../../components/AlumniFooter"
 // import AppliedJobs from "./appliedjobs"
-import SignIn from "./signin"
+ import SignIn from "./signin"
 
 export default function Home() {
   return (
