@@ -10,28 +10,28 @@ const AlumProfileBody = () => {
   // a.forEach(i => console.log(i.title))
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col w-[350px]'>
         <div className='flex flex-col'>
           <div className='flex flex-row h-full justify-between items-start'>
-            <h1 className='text-2xl font-semibold text-moringa_blue'>
+            <h1 className='text-2xl font-semibold text-moringa_blue mb-3'>
               About
             </h1>
             <div className='flex flex-row basis-1/4 w-1/12 h-full justify-between items-start'>
-              <Image src={'assets/material-symbols_edit-square-outline.svg'} width={24} height={24} className='flex-shrink-0'/>
-              <Image src={'assets/material-symbols_add.svg'} width={24} height={24} className='flex-shrink-0'/>
+              <Image src={'assets/material-symbols_edit-square-outline.svg'} alt='logo' width={24} height={24} className='flex-shrink-0 mx-4'/>
+              <Image src={'assets/material-symbols_add.svg'} alt='logo' width={24} height={24} className='flex-shrink-0 mx-4'/>
           </div>
           </div>
           <div>
-            <p className='flex flex-col flex-shrink-0 w-[635px]'>
-            {alumProfile.about}
+            <p className='flex flex-col flex-shrink-0 w-[635px] mb-4'>
+            {alumProfile.about.about}
             </p>
           </div>
         </div>
-        <div className='flex flex-col'>
-            <h1 className='text-2xl font-semibold text-moringa_blue'>
+        <div className='flex flex-col mt-5'>
+            <h1 className='text-2xl font-semibold text-moringa_blue mb-3'>
               Experience
             </h1>
-            <div className='flex flex-col'>
+            <div className='flex flex-col my-3'>
               {alumProfile.experience.map((obj, i) => (
               <div >
               <AlumniExperienceCard
@@ -47,12 +47,12 @@ const AlumProfileBody = () => {
             </div>
             
         </div>
-        <div className='flex flex-col'>
-            <h1 className='text-2xl font-semibold text-moringa_blue'>
+        <div className='flex flex-col mt-5'>
+            <h1 className='text-2xl font-semibold text-moringa_blue mb-3'>
               Education
             </h1>
             {alumProfile.education.map((obj, i) => (
-              <div>
+              <div className='my-3'>
               <AlumniEducationCard
                 key={i}
                 organisation={obj.organisation}

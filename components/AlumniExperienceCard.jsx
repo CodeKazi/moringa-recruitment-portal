@@ -10,7 +10,7 @@ const AlumniExperienceCard = ({
 }) => {
   return (
     <>
-    <div className=''>
+    <div className='my-10'>
         <h2 className='text-xl font-semibold text-moringa_blue/80'>{title}</h2>
         <p className='text-base text-black/75'>{organisation}</p>
         <div className='flex flex-row justify-between w-auto'>
