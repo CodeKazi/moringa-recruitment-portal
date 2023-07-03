@@ -10,7 +10,7 @@
 // import AlumniNavbar from "../../components/AlumniNavbar"
 // import AlumniFooter from "../../components/AlumniFooter"
 // import AppliedJobs from "./appliedjobs"
-// import SignIn from "./signin"
+import SignIn from "./signin"
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
     <div className="container mx-auto h-full">
       
       <SignIn/>  
-      <Dashboard/>
+      
     </div>
     </main>
   )
