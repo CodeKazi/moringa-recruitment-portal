@@ -33,9 +33,8 @@ const AlumProfileBody = () => {
             </h1>
             <div className='flex flex-col my-3'>
               {alumProfile.experience.map((obj, i) => (
-              <div >
+              <div key={i}>
               <AlumniExperienceCard
-                key={i}
                 title={obj.title}
                 organisation={obj.organisation}
                 fromto={obj.fromto}
@@ -52,9 +51,8 @@ const AlumProfileBody = () => {
               Education
             </h1>
             {alumProfile.education.map((obj, i) => (
-              <div className='my-3'>
+              <div className='my-3' key={i}>
               <AlumniEducationCard
-                key={i}
                 organisation={obj.organisation}
                 fromto={obj.fromto}
                 duration={obj.duration}
