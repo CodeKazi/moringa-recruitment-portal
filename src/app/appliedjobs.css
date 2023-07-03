@@ -1,27 +1,35 @@
 body {
     background-color: white;
-    width: 50rem;
+    width: 90rem;
     height: auto;
     border: 2px solid rgb(248, 241, 241);
     margin: 1rem auto;
 }
 
 .cards {
-    width: 26rem;
+    width: 40rem;
+    /* width: 1440px; */
     
 }
 
 @media (max-width: 640px) {
-    .top-section {
-        padding: 8;
+   body {
+        width: 45rem;
     }
     .container {
         display: block;
+    }
+    .cards {
+        width: 30rem;
     }
     .side-section {
         margin-left: 3rem;
     }
     .mobile-br {
         display: block;
+    }
+    .pagination {
+        display: flex;
+        justify-content: flex-startq;
     }
 }
