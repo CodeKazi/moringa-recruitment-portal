@@ -60,7 +60,9 @@ const Dashboard = () => {
                     </div>
                     <div className='grid grid-cols-5 gap-[52px] w-[1110px] items-start mb-10'>
                         {socialProof.map((item, i) => (
+                            <div key={i}>
                             <SocialProof key={i} image={item.image} />
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -82,11 +84,13 @@ const Dashboard = () => {
                         <div className='grid grid-cols-2 gap-[52px] w-[1110px] items-start mb-10'>
                             {
                                 topJobs.map((job, i) => (
+                                    <div key={i}>
                                     <TopJobsCard key={i}
                                         title={job.title}
                                         description={job.description}
                                         tags={job.tags}
                                     />
+                                    </div>
                                 ))
                             }
                         </div>
@@ -123,12 +127,14 @@ const Dashboard = () => {
                         </div>
                         <div className='grid grid-cols-2 gap-[52px] w-[1110px] items-start mb-10'>
                             {recentJobs.map((job, i) => (
-                                <RecentJobsCard key={i}
+                                <div key={i}>
+                                <RecentJobsCard
                                     title={job.title}
                                     location={job.location}
                                     image={job.image}
                                     tags={job.tags}
                                 />
+                                </div>
                             ))}
                         </div>
                     </div>
