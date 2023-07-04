@@ -2,14 +2,16 @@
 // import ResetPassword from "./resetPassword1"
 // import Dashboard from "./dashboard"
 // import AlumniProfileMain from "./alumniProfileMain"
-// import SignIn from "./signin"
+// import AlumniJobInterviewPrep from "./alumniJobInterviewPrep";
+// import AlumProfileDraftJobs from "./alumProfileDraftJobs"
+import SignIn from "./signin"
 
-import AlumniJobInterviewPrep from "./alumniJobInterviewPrep";
+
 
 export default function Home() {
     return (
     <>
-    <div className="container mx-auto h-full">
+    <div>
       <SignIn/>
       {/* <ResetPassword/> */}
       {/* <Dashboard/> */}
