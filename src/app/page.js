@@ -10,11 +10,11 @@ export default function Home() {
     return (
     <>
     <div className="container mx-auto h-full">
-      {/* <SignIn/> */}
+      <SignIn/>
       {/* <ResetPassword/> */}
       {/* <Dashboard/> */}
       {/* <AlumniProfileMain/> */}
-      <AlumniJobInterviewPrep/>
+      {/* <AlumniJobInterviewPrep/> */}
     </div>
     </>)
 

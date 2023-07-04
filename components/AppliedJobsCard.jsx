@@ -11,7 +11,7 @@ const AppliedJobsCard = ({
   return (
     <div className='inline-flex flex-row items-start gap-7  mb-5 w-full lg:w-[515px] border-b-2 border-b-moringa_blue/25'>
         <div className='flex w-20 h-16 p-5 items-start px-2.5'>
-            <Image src={image} width={81} height={61}/>
+            <Image src={image} alt='logo' width={81} height={61}/>
         </div>
         <div className='flex h-16 flex-col justify-between items-start w-full lg:w-[350px] px-2.5'>
             <h1 className='text-xl not-italic font-medium text-moringa_blue/80'>
@@ -26,7 +26,7 @@ const AppliedJobsCard = ({
         </div>
         <div className='flex items-end mb-5'>
             {closeBtn ? (
-                <Image src={closeBtn} w={24} height={24} className='text-moringa_blue/80'/>
+                <Image src={closeBtn} w={24} height={24} alt='logo' className='text-moringa_blue/80'/>
             ) : (
                 <></>
             )}

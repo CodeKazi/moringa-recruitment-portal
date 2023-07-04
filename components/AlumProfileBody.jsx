@@ -21,8 +21,8 @@ const AlumProfileBody = () => {
               About
             </h1>
             <div className='flex flex-row basis-1/4 w-1/12 h-full justify-between items-start'>
-              <Image src={'assets/material-symbols_edit-square-outline.svg'} width={24} height={24} className='flex-shrink-0'/>
-              <Image src={'assets/material-symbols_add.svg'} width={24} height={24} className='flex-shrink-0'/>
+              <Image src={'assets/material-symbols_edit-square-outline.svg'} alt='logo' width={24} height={24} className='flex-shrink-0'/>
+              <Image src={'assets/material-symbols_add.svg'} alt='logo' width={24} height={24} className='flex-shrink-0'/>
           </div>
           </div>
           <div>
