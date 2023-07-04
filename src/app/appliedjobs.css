@@ -1,35 +1,70 @@
 body {
     background-color: white;
-    width: 90rem;
+    width: auto;
     height: auto;
-    border: 2px solid rgb(248, 241, 241);
-    margin: 1rem auto;
 }
 
 .cards {
-    width: 40rem;
-    /* width: 1440px; */
-    
+    width: 65rem;
 }
 
-@media (max-width: 640px) {
-   body {
-        width: 45rem;
+@media (max-width: 1686px) {
+    .cards {
+        width: 50rem;
     }
+}
+
+@media (max-width: 1686px) {
+    .cards {
+        width: 35rem;
+    }
+
+    .title {
+        margin-left: 4rem;
+    }
+}
+
+@media (max-width: 1174px) {
+    .cards {
+        width: 25rem;
+    }
+    .side-section {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 885px) {
     .container {
         display: block;
+        margin-left: 1rem;
+    }
+    .top {
+        margin-left: 1rem;
     }
     .cards {
         width: 30rem;
     }
-    .side-section {
+    .side-section, .center, .title {
         margin-left: 3rem;
     }
     .mobile-br {
         display: block;
     }
+    .center {
+        margin-left: 3rem;
+    }
     .pagination {
         display: flex;
-        justify-content: flex-startq;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 555px) {
+    .cards {
+        width: 20rem;
+    }
+    .profile {
+        width: 140px;
+        height:  140px;
     }
 }
