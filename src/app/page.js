@@ -11,7 +11,7 @@ import SignIn from "./signin"
 export default function Home() {
     return (
     <>
-    <div>
+    <div className="content-center">
       <SignIn/>
       {/* <ResetPassword/> */}
       {/* <Dashboard/> */}
