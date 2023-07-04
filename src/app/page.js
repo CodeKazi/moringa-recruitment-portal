@@ -6,7 +6,7 @@ import Dashboard from "./dashboard"
 export default function Home() {
     return (
     <>
-    <div className="container mx-auto h-full">
+    <div>
       {/* <SignIn/> */}
       {/*<ResetPassword/>*/} {/* default export in resetPassword1 and resetPassword2 is named ResetPassword */}
       <Dashboard/>
