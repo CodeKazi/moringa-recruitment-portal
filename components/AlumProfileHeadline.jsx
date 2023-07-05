@@ -20,7 +20,7 @@ const AlumProfileHeadline = ({
           </div>
           <div className='flex basis-1/10 w-1/12 h-full mt-10 justify-end items-start'>
             { editIcon ? (
-                <Image src={editIcon} width={24} height={24} className='flex-shrink-0'/>
+                <Image src={editIcon} width={24} height={24} alt='logo' className='flex-shrink-0'/>
             ) : (
               <></>
             )
