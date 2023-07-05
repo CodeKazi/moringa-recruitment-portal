@@ -11,7 +11,7 @@
 // import AlumniFooter from "../../components/AlumniFooter"
 // import AppliedJobs from "./appliedjobs"
 // import ImageModal from "./uploadmodal"
-// import SignIn from "./signin"
+  import SignIn from "./signin"
 export default function Home() {
   return (
     <main>
