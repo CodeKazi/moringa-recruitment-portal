@@ -1,0 +1,28 @@
+body {
+  background-color: rgba(0, 0, 0, 0.70);
+}
+
+.modal {
+    
+    max-width: 885px;
+    min-width: 300px;
+    max-height: 553px;
+    min-height: 300px;
+    overflow: auto; 
+    /* border: 1px solid red; */
+    background-color: #FFF;
+    /* margin: 2rem auto; */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #FFF;
+    padding-top: 1rem;
+    padding-left: 3rem;
+  }
+
+  .delete p {
+    color: #CF1616;
+  }
+  
+  
