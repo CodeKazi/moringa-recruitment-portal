@@ -8,7 +8,7 @@ export const moreJobs = [
     {
         title: 'Junior Mobile Developer',
         location: 'Nairobi, Kenya',
-        image: '/assets/toptal.png',
+        image: '/assets/im.png',
         tags: ['Java', 'Flutter'],
     },
     {

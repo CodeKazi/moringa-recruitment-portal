@@ -1,15 +1,17 @@
 body {
      background: #F5F5F5;
+     margin: 1rem auto;
 }
 
 .container {
     position: absolute;
     height: 550px;
     width: 400px; 
-    left: 400px;
+    left: 450px;
     top: 50px;
     border-radius: 5px;
     border: 1px solid rgba(16, 31, 60, 0.25);
+    margin: 1rem auto;
 }
 
 h2 {
