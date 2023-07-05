@@ -49,7 +49,6 @@ const AlumniJobInterviewPrep = () => {
                     {appliedJobs.map((job, i) => (
                         <div key={i}>
                         <AppliedJobsCard
-                            key={i}
                             image={job.image}
                             title={job.title}
                             location={job.location}
