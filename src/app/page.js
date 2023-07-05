@@ -23,8 +23,7 @@ import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import "./modals/scss/styles.scss";
 import "./modals/scss/styles.css";
-import Paper from '@mui/material/Paper';
-import { styled } from '@mui/material/styles';
+
 
 
 
@@ -35,6 +34,26 @@ export default function Home() {
   const [showModal1, setShowModal1] = useState(false);
   const [showModal2, setShowModal2] = useState(false);
   const [showModal3, setShowModal3] = useState(false);
+  //edit headline states
+  const [title, setTitle] = useState("");
+  const [lastname, setTastname] = useState("");
+  const [headline, setHeadline] = useState("");
+  const [location, setLocation] = useState("");
+  // education section
+  const [institution, setInstitution] = useState("");
+  const [startDate, setStartDate] = useState("");
+  const [stopDate, setStopDate] = useState("");
+  const [location1, setLocation1] = useState("");
+//experience states
+   const [titleCompany, setTitleCompany] = useState("")
+   const [companyName, setCompanyName] = useState("")
+   const [start, setStart] = useState("")
+   const [stop, setStop] = useState("")
+   const [location2, setLocation2] = useState("");
+// about
+const [about, setAbout] = useState("");
+
+
 
 
 
@@ -64,23 +83,23 @@ export default function Home() {
       <Box>
 
       <div className='input-Fields'>
-      <TextField sx={{width: 400}} id="outlined-basic" label="Title" variant="outlined" />
+      <TextField  value = {about}  onChange = {(e) =>setAbout( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic"size="small"  label="Title" variant="outlined"  required/>
       </div>
       </Box>
       <Box>
       
     <div className='input-Fields'>
-     <TextField sx={{width: 400}} id="outlined-basic" label="Last Name" variant="outlined" />
+     <TextField  value = {about}  onChange = {(e) =>setAbout( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic" size="small"  label="Last Name" variant="outlined"  required/>
      </div>
     </Box>
       <div className='input-Fields'>
       
-      <TextField sx={{width: 400}} id="outlined-basic" label="Headline" variant="outlined" />
+      <TextField  value = {about}  onChange = {(e) =>setAbout( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic"  size="small" label="Headline" variant="outlined" required />
 
       </div>
       <div className='input-Fields'>
     
-      <TextField sx={{width: 400}} id="outlined-basic" label="Location" variant="outlined" />
+      <TextField  value = {about}  onChange = {(e) =>setAbout( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic" size="small" label="Location" variant="outlined" required/>
      
             </div>
 
@@ -122,32 +141,27 @@ Save
                <div className='input-Fields'>
                <Stack spacing={2}>
               
-                <TextField sx={{width: 400}} id="outlined-basic" label="Institution" variant="outlined" />
+                <TextField  value = {about}  onChange = {(e) =>setAbout( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic" size="small"  label="Institution" variant="outlined" required />
                
                  </Stack>
                </div>
                <Stack direction="row" spacing={0.5}> 
                <div className='input-Fields'>
               
-                <TextField sx={{width: 200}} id="outlined-basic" label="Start Date" variant="outlined" />
+                <TextField  value = {about}  onChange = {(e) =>setAbout( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic"  size="small" label="Start Date" variant="outlined" required/>
              </div>
-             <div className='input-Fields'>
-              <TextField sx={{width: 200}} id="outlined-basic" label="Outlined" variant="outlined" />
-            </div> 
+
             </Stack> 
             <Stack direction="row" spacing={0.5}> 
-            <div className='input-Fields'>
-           
-             <TextField sx={{width: 200}} id="outlined-basic" label="Stop Date" variant="outlined" />
-          </div>
+
           <div className='input-Fields'>
-           <TextField sx={{width: 200}} id="outlined-basic" label="Outlined" variant="outlined" />
+           <TextField  value = {about}  onChange = {(e) =>setAbout( e.target.value)} type='date' sx={{width: 400}} id="outlined-basic"  size="small" label="Stop Date" variant="outlined" required/>
          </div> 
          </Stack> 
             <div className='input-Fields'>
             <Stack spacing={2}> 
            
-           <TextField sx={{width: 400}} id="outlined-basic" label="Location" variant="outlined" />
+           <TextField  value = {about}  onChange = {(e) =>setAbout( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic"  size="small" label="Location" variant="outlined" required/>
            
            </Stack>
                 </div>
@@ -182,31 +196,26 @@ Save
 </div>
                 <ModalBody3 className="form-inputs">
                <div className='input-Fields'>
-                <TextField sx={{width: 400}} id="outlined-basic" label="Title" variant="outlined" />
+                <TextField  value = {about}  onChange = {(e) =>setAbout( e.target.value)} sx={{width: 400}} id="outlined-basic"   size="small" label="Title" variant="outlined" required/>
 </div>
 <div className='input-Fields'>
-            <TextField sx={{width: 400}} id="outlined-basic" label="Company Name" variant="outlined" />
+            <TextField  value = {about}  onChange = {(e) =>setAbout( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic"  size="small" label="Company Name" variant="outlined" required/>
           </div>
           <Stack direction="row" spacing={0.5}> 
           <div className='input-Fields'>
          
-           <TextField sx={{width: 200}} id="outlined-basic" label="Stop Date" variant="outlined" />
+           <TextField  value = {about}  onChange = {(e) =>setAbout( e.target.value)} type='date'  sx={{width: 400}} id="outlined-basic" size="small"  label="Start Date" variant="outlined" required/>
         </div>
-        <div className='input-Fields'>
-         <TextField sx={{width: 200}} id="outlined-basic" label="Outlined" variant="outlined" />
-       </div> 
+
        </Stack> 
        <Stack direction="row" spacing={0.5}> 
-       <div className='input-Fields'>
-      
-        <TextField sx={{width: 200}} id="outlined-basic" label="Start Date" variant="outlined" />
-     </div>
+
      <div className='input-Fields'>
-      <TextField sx={{width: 200}} id="outlined-basic" label="Outlined" variant="outlined" />
+      <TextField  value = {about}  onChange = {(e) =>setAbout( e.target.value)} type='date'  sx={{width: 400}} id="outlined-basic" size="small"  label="Stop Date" variant="outlined" required/>
     </div> 
     </Stack> 
         <div className='input-Fields'>
-        <TextField sx={{width: 400}} id="outlined-basic" label="Location" variant="outlined" />
+        <TextField  value = {about}  onChange = {(e) =>setAbout( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic" size="small"  label="Location" variant="outlined" required/>
         </div>
 
                
@@ -242,7 +251,7 @@ Save
          </div>
          <ModalBody1 className="form-inputs">
        <div className='input-Fields'>
-        <TextField sx={{width: 400}} rows={4} id="filled-multiline-static"  label="About"
+        <TextField  value = {about}  onChange = {(e) =>setAbout( e.target.value)} type="text" sx={{width: 400}} rows={4} id="filled-multiline-static"  label="About"
           multiline  variant = "outlined" />
         </div>
 
