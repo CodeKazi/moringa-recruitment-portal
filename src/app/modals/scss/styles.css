@@ -10,8 +10,18 @@
 
   }
 
+  .form-button {
+    padding: 1rem;
+  }
+
 .input-Fields{
 
+  padding: .4rem;
+  margin: auto;
+
+}
+
+.btn-btn {
   padding: .4rem;
   margin: auto;
 

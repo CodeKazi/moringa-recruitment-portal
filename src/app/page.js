@@ -64,6 +64,7 @@ export default function Home() {
 
     return (
       <Box>
+      
         <div>
             <Button onClick={() => setShowModal(true)}>
                 Edit headline
@@ -80,38 +81,46 @@ export default function Home() {
 </div>
                 <ModalBody className="form-inputs">
                 <FormControl>
-      <Box>
-
+     
+      <Stack direction="row"> 
       <div className='input-Fields'>
       <TextField  value = {title}  onChange = {(e) =>setTitle( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic"size="small"  label="Title" variant="outlined"  required/>
       </div>
-      </Box>
-      <Box>
+      </Stack>
+     
       
+      <Stack direction="row"> 
     <div className='input-Fields'>
      <TextField  value = {lastname}  onChange = {(e) =>setLastname( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic" size="small"  label="Last Name" variant="outlined"  required/>
      </div>
-    </Box>
+     </Stack>
+   
+    <Stack direction="row"> 
       <div className='input-Fields'>
       
       <TextField  value = {headline}  onChange = {(e) =>setHeadline( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic"  size="small" label="Headline" variant="outlined" required />
 
       </div>
+      </Stack>
+      <Stack direction="row"> 
       <div className='input-Fields'>
     
       <TextField  value = {location}  onChange = {(e) =>setLocation( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic" size="small" label="Location" variant="outlined" required/>
      
             </div>
+            </Stack>
 
       
 
     
             </FormControl> 
                 </ModalBody>
-<ModalFooter>
+<ModalFooter className="form-button">
+
 <Button2 type="submit">
 Save
 </Button2>
+
 </ModalFooter>
 
             </Modal>
@@ -137,40 +146,44 @@ Save
 </ModalHeader2>
 </div>
                 <ModalBody2 className="form-inputs">
-                
+                <Stack direction = "row">
                <div className='input-Fields'>
-               <Stack spacing={2}>
+               
               
                 <TextField  value = {institution}  onChange = {(e) =>setInstitution( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic" size="small"  label="Institution" variant="outlined" required />
                
-                 </Stack>
+                 
                </div>
-               <Stack direction="row" spacing={0.5}> 
+               </Stack>
+               <Stack direction="row"> 
                <div className='input-Fields'>
               
-                <TextField  value = {startDate}  onChange = {(e) =>setStartDate( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic"  size="small" label="Start Date" variant="outlined" required/>
+                <TextField  value = {startDate}  onChange = {(e) =>setStartDate( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic"  size="small" helperText="Start Date" variant="outlined" required/>
              </div>
 
             </Stack> 
-            <Stack direction="row" spacing={0.5}> 
-
+            <Stack direction="row" > 
+         
           <div className='input-Fields'>
-           <TextField  value = {stopDate}  onChange = {(e) =>setStopDate( e.target.value)} type='date' sx={{width: 400}} id="outlined-basic"  size="small" label="Stop Date" variant="outlined" required/>
+           <TextField  value = {stopDate}  onChange = {(e) =>setStopDate( e.target.value)} type='date' sx={{width: 400}} id="outlined-basic"  size="small" helperText="Stop Date" variant="outlined" required/>
          </div> 
          </Stack> 
+         <Stack direction = "row"> 
             <div className='input-Fields'>
-            <Stack spacing={2}> 
+           
            
            <TextField  value = {location1}  onChange = {(e) =>setLocation1( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic"  size="small" label="Location" variant="outlined" required/>
            
-           </Stack>
+          
                 </div>
-             
+                </Stack>
                 </ModalBody2>
-                <ModalFooter2>
+                <ModalFooter2 className="form-button">
+             
                     <Button2 type="submit">
                         Save
                     </Button2>
+                  
                 </ModalFooter2>
             </Modal2>
         </div>
@@ -195,36 +208,44 @@ Save
 </ModalHeader3>
 </div>
                 <ModalBody3 className="form-inputs">
+                <Stack direction="row"> 
                <div className='input-Fields'>
                 <TextField  value = {titleCompany}  onChange = {(e) =>setTitleCompany( e.target.value)} sx={{width: 400}} id="outlined-basic"   size="small" label="Title" variant="outlined" required/>
 </div>
+</Stack>
+<Stack direction="row"> 
 <div className='input-Fields'>
             <TextField  value = {companyName}  onChange = {(e) =>setCompanyName( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic"  size="small" label="Company Name" variant="outlined" required/>
           </div>
-          <Stack direction="row" spacing={0.5}> 
+          </Stack>
+          <Stack direction="row"> 
           <div className='input-Fields'>
          
-           <TextField  value = {start}  onChange = {(e) =>setStart( e.target.value)} type='date'  sx={{width: 400}} id="outlined-basic" size="small"  label="Start Date" variant="outlined" required/>
+           <TextField  value = {start}  onChange = {(e) =>setStart( e.target.value)} type='date'  sx={{width: 400}} id="outlined-basic" size="small"  helperText="Start Date" variant="outlined" required/>
         </div>
 
        </Stack> 
-       <Stack direction="row" spacing={0.5}> 
+       <Stack direction="row"> 
 
      <div className='input-Fields'>
-      <TextField  value = {stop}  onChange = {(e) =>setStop( e.target.value)} type='date'  sx={{width: 400}} id="outlined-basic" size="small"  label="Stop Date" variant="outlined" required/>
+      <TextField  value = {stop}  onChange = {(e) =>setStop( e.target.value)} type='date'  sx={{width: 400}} id="outlined-basic" size="small"  helperText="Stop Date" variant="outlined" required/>
     </div> 
     </Stack> 
+    <Stack direction="row"> 
         <div className='input-Fields'>
         <TextField  value = {location2}  onChange = {(e) =>setLocation2( e.target.value)} type="text" sx={{width: 400}} id="outlined-basic" size="small"  label="Location" variant="outlined" required/>
         </div>
+        </Stack>
 
                
               
                 </ModalBody3>
-                <ModalFooter3>
+                <ModalFooter3 className="form-button">
+               
                     <Button3 type="submit">
                         Save
                     </Button3>
+                    
                 </ModalFooter3>
             </Modal3>
         </div>
@@ -250,20 +271,24 @@ Save
     
          </div>
          <ModalBody1 className="form-inputs">
+         <Stack direction="row"> 
        <div className='input-Fields'>
         <TextField  value = {about}  onChange = {(e) =>setAbout( e.target.value)} type="text" sx={{width: 400}} rows={4} id="filled-multiline-static"  label="About"
-          multiline  variant = "outlined" />
+          multiline  variant = "outlined" required/>
         </div>
+        </Stack>
 
 
 
                 
              
                 </ModalBody1>
-                <ModalFooter1>
+                <ModalFooter1 className="form-button">
+              
                     <Button1 type="submit">
                         Save
                     </Button1>
+                
                 </ModalFooter1>
             </Modal1>
         </div>
