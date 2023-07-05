@@ -47,8 +47,8 @@ const AlumniJobInterviewPrep = () => {
                 </div>
                 <div className='mt-4 flex flex-col w-full lg:w-[515px] '>
                     {appliedJobs.map((job, i) => (
+                        <div key={i}>
                         <AppliedJobsCard
-                            key={i}
                             image={job.image}
                             title={job.title}
                             location={job.location}
@@ -56,6 +56,7 @@ const AlumniJobInterviewPrep = () => {
                             closeBtn={closeBtn}
                             className='mb-20'
                         />
+                        </div>
                     ))}
                 </div>
                 <div>
