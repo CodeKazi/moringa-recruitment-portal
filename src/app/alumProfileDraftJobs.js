@@ -5,6 +5,7 @@ import AlumDraftJobs from '../../components/AlumDraftJobs'
 import AlumProfileHeadline from '../../components/AlumProfileHeadline'
 import { alumProfile } from '../../cardData/alumProfile'
 import { draftJobs } from '../../cardData/draftJobs'
+import closeBtn from 'public/assets/iconoir_cancel.svg'
 
 const AlumProfileDraftJobs = () => {
   return (
