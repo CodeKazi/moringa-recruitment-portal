@@ -12,7 +12,7 @@
 // import AppliedJobs from "./appliedjobs"
 // import PictureUpload from "./uploadmodal"
 // import PictureDelete from "./deletephoto"
- import SignIn from "./signin"
+//  import SignIn from "./signin"
 export default function Home() {
   return (
     <main>
