@@ -39,10 +39,9 @@ const AlumProfileBody = () => {
               {alumProfile.experience.map((obj, i) => (
               <div key={i} >
                 {/* <p>{i}</p> */}
-                {console.log(obj.title)}
-                {/* {obj.title} */}
-              <AlumniExperienceCard
-                key={i}
+                {/* {console.log(obj.title)} */}
+                {/* {obj.title} */} 
+              <AlumniExperienceCard 
                 title={obj.title}
                 organisation={obj.organisation}
                 fromto={obj.fromto}
@@ -59,9 +58,8 @@ const AlumProfileBody = () => {
               Education
             </h1>
             {alumProfile.education.map((obj, i) => (
-              <div>
+              <div key={i}>
               <AlumniEducationCard
-                key={i}
                 organisation={obj.organisation}
                 fromto={obj.fromto}
                 duration={obj.duration}
