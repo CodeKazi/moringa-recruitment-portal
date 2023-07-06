@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import closeBtn from '/public/assets/material-symbols_edit-square-outline.svg'
 
 const AlumDraftJobs = ({
     title,
