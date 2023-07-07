@@ -10,7 +10,7 @@ import { appliedJobs } from '../../cardData/appliedJobs'
 const AlumniJobInterviewPrep = () => {
   return (
     //container
-    <div className='flex flex-col w-full lg:w-[1440px] h-full lg:h-[2221px] bg-white'>
+    <div className='flex flex-col w-full h-full lg:h-[2221px] bg-white'>
         {/* nav */}
         <div className='flex basis-23/500'>
             <AlumniNavbar/>
@@ -54,7 +54,7 @@ const AlumniJobInterviewPrep = () => {
                             location={job.location}
                             applied={job.applied}
                             closeBtn={closeBtn}
-                            className='mb-20'
+                            className='mb-20 text-moringa_blue'
                         />
                         </div>
                     ))}

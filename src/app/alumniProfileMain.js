@@ -9,7 +9,7 @@ import editIcon from 'public/assets/material-symbols_edit-square-outline.svg'
 const AlumniProfileMain = () => {
   return (
     // container
-    <div className='flex flex-col w-full lg:w-[1440px] h-full lg:h-[1727px] bg-white'>
+    <div className='flex flex-col w-full h-full lg:h-[1727px] bg-white'>
         {/* nav (same as dashboard; will refactor later) */}
         <div className='flex basis-23/500'>
             <AlumniNavbar/>

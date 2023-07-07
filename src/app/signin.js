@@ -2,7 +2,7 @@ import React from 'react'
 
 const SignIn = () => {
   return (
-    <div className='relative w-[1440px] h-[1024px] bg-white flex flex-col'>
+    <div className='relative w-full h-[1024px] bg-white flex flex-col'>
         <div className='absolute box-border flex flex-col items-start px-[100px] pt-3 pb-[100px] gap-10 w-[1440px] h-[80px] left-0 top-0 border-b-1 border-b-solid border-b-black border-b-opacity-25'>
             <div className="w-[95px] h-[65px] bg-[url('/assets/moringa0.png')] flex-none order-none self-stretch grow-0"/>
         </div>

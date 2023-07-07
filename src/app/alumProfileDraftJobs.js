@@ -10,7 +10,7 @@ import closeBtn from 'public/assets/iconoir_cancel.svg'
 const AlumProfileDraftJobs = () => {
   return (
         //container
-        <div className='flex flex-col w-full lg:w-[1440px] h-full lg:h-[2221px] bg-white'>
+        <div className='flex flex-col w-full h-full lg:h-[2221px] bg-white'>
         {/* nav */}
         <div className='flex basis-23/500'>
             <AlumniNavbar/>
@@ -54,7 +54,7 @@ const AlumProfileDraftJobs = () => {
                             location={job.location}
                             isApplied={job.isApplied}
                             closeBtn={closeBtn}
-                            className='mb-20'
+                            className='mb-20 text-moringa_blue'
                         />
                         </div>
                     ))}
