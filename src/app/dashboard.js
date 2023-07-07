@@ -11,7 +11,7 @@ import { recentJobs } from '../../cardData/recentjobs'
 
 const Dashboard = () => {
     return (
-        <div className='w-[1440px] h-[3827px] bg-white flex flex-col items-center'>
+        <div className='w-full h-[3827px] bg-white flex flex-col items-center'>
             {/* Header */}
             <div className='inline-flex flex-row items-start justify-between px-[100px] pt-3 pb-[80px] gap-10 w-[1440px] h-[80px] border-b'>
                 <div className="w-[95px] h-[65px] bg-[url('/assets/moringa0.png')] flex-none order-none self-stretch grow-0 mt-5" />
