@@ -5,7 +5,7 @@ import { MdLocationOn } from 'react-icons/md'
 
 const AlumniFooter = () => {
 return (
-<div className='bg-[#484848] w-[1440px] h-[498px] flex flex-col flex-shrink-0'>
+<div className='bg-[#484848] w-full h-[498px] flex flex-col flex-shrink-0'>
     <div className='bg-moringa_blue opacity-50 w-[1440px] h-[497.712px] inline-flex flex-row flex-shrink-0'>
         <div className=' basis-2/5'>
             <div className='mt-[69px] ml-[66px]'>
