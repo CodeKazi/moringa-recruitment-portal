@@ -1,9 +1,10 @@
 import React from 'react'
+import Image from 'next/image'
 
 const SocialProof = ({image}) => {
   return (
     <div className='flex'>
-        <img src={image} />
+        <Image src={image} alt=''/>
     </div>
   )
 }
