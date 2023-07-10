@@ -156,27 +156,27 @@ const JobInfo = () => {
             <section>
 
                 <div className='flex items-center justify-between cursor-pointer p-6'>
-                    <h2 className='text-3xl font-semibold ml-32 mt-4 '>More Jobs Like This</h2>
+                    <h2 className='text-3xl font-semibold ml-40 mt-4 '>More Jobs Like This</h2>
                     <p className='flex text-lg  font-normal mr-72 mt-4'>View All <span><img src='./icons/mdi_arrow-right-thin.png' /></span></p>
                 </div>
 
             </section>
 
-            <section className='grids-container mt-3 mx-40'>
+            <section className='grids-container mt-3 mx-44'>
 
 
                 {moreJobs.map((job, i) => (
-                    <div key={i} className='grids flex flex-wrap max-w-xl min-w-fit border border-gray-400'>
+                    <div key={i} className='grids flex max-w-xl min-w-fit border border-gray-400'>
                         <div className='flex items-center ml-5'>
                             <img src={job.image} alt='logo' />
                         </div>
-                        <div className='ml-10 mt-3'>
+                        <div className='ml-12 mt-3'>
                             <p className='text-2xl font-medium'>{job.title}</p>
                             <p className='text-lg font-normal'>{job.location}</p>
                             <div>
                                 {job.tags.map((tag, i) => (
                                     <span key={i}
-                                        className={`text-base font-normal mr-3 mb-2 p-px rounded-3xl ${i % 2 === 0 ? 'bg-gray-500' : 'bg-orange-500'}`}>{tag}</span>
+                                        className={`text-base font-normal mr-3 mb-2 p-px cursor-pointer rounded-3xl ${i % 2 === 0 ? 'bg-gray-500' : 'bg-orange-500'}`}>{tag}</span>
                                 ))}
                             </div>
                         </div>
