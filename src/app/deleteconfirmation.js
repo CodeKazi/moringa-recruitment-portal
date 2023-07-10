@@ -6,7 +6,7 @@ const DeleteConfirmation = ({isVisible, notVisible}) => {
   return (
     <div>
       <div className='fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm  z-10 origin-top w-full h-full '></div>
-         <div className="bg-white mt-2 m-auto max-w-sm  max-h-48 border-2 rounded-md mt-3 absolute right-2/4  top-52 z-20 ">
+         <div className="bg-white  m-auto max-w-sm  max-h-48 border-2 rounded-md mt-3 absolute right-2/4  top-52 z-20 ">
                 <div className="border-b-2">
                     <h1 className="text-xl font-semibold my-2 ml-4">Delete photo</h1>
                 </div>
