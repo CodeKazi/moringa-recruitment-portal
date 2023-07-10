@@ -3,18 +3,18 @@ import Image from 'next/image'
 
 const RecentJobsCard = ({title, image, location, tags}) => {
   return (
-    <div className='flex h-[138px] w-[498px] flex-col justify-between items-center py-5 rounded border border-moringa_blue/25 border-solid'>
-        <div className='flex flex-row items-start gap-3'>
-            <div className='flex basis-2/7 justify-start items-start'>
+    <div className='flex h-52 p-20 m-15 justify-between items-center rounded border border-moringa_blue/25 border-solid'>
+        <div className='flex  w-[498px] p-2.5 m-2.5'>
+            <div className='flex basis-2/5 justify-center items-start m-2.5'>
                 <Image src={image}
-                    width={81}
-                    height={61}
+                    width={100}
+                    height={81}
                     alt='logo'
                 />
             </div>
-            <div className='flex basis-5/7 flex-col' >
-                <div className="flex flex-col px-1 py-1 m-1">
-                    <p className=" mb-2 text-xl font-medium text-moringa_blue">
+            <div className='flex flex-col p-2.5 m-2.5 items-start justify-center shadow-lg' >
+                <div className="flex flex-col px-10 py-4 m-8 w-full">
+                    <p className=" mb-2 mt-5 text-xl font-medium text-moringa_blue">
                         {title}
                     </p>
                     <p className="flex flex-col flex-shrink-0 text-base text-black/75">
