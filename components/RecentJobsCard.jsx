@@ -23,11 +23,11 @@ const RecentJobsCard = ({title, image, location, tags}) => {
                 </div>
                 <div className=" flex flex-row px-6 pt-4 pb-2">
                     {tags.map((tag, i) => (
-                        <p key={i}
-                            className={`inline-block rounded-full px-3 py-1 text-sm font-normal text-moringa_blue/80 mr-2 mb-2 ${i%2 === 0 ? "bg-gray-500" : "bg-orange-500}"}`}
+                        <span key={i}
+                            className={`inline-block rounded-full px-3 py-1 text-sm font-normal text-moringa_blue/80 mr-2 mb-2 ${i%2 === 0 ? "bg-gray-500" : "bg-orange-400"}`}
                         >
                             {tag}
-                        </p>
+                        </span>
                     ))}
                 </div>
             </div>

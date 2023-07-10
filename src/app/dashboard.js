@@ -114,7 +114,7 @@ const Dashboard = () => {
                 </div>
 
                 {/* Body, part 3: recent jobs... */}
-                <div className='bg-[#848484] w-full h-[1371px] flex flex-col items-center justify-center'>
+                <div className=' w-full h-[1371px] flex flex-col items-center justify-center'>
                     <div className='flex flex-col justify-between items-center w-[1108px] mt-10 mb-5'>
                         <div className='flex justify-between items-center w-[1108px] mt-10 mb-[20px]'>
                             <p className='text-2xl font-semibold text-moringa_blue'>
