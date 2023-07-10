@@ -24,14 +24,14 @@ const AlumniProfileMain = () => {
         </div>
         {/* profile info and edit button*/}
         <div className='bg-[#585858] flex flex-row basis-4767/10000'>
-            <div className='basis-2/7 ml-[165px]'>
-                <ul className='flex flex-col justify-center text-2xl font-normal text-moringa_blue'>
-                    <li><a>Profile</a></li>
+            <div className='basis-2/7 ml-[165px] mt-6'>
+                <ul className='flex flex-col justify-center text-2xl font-normal text-moringa_blue gap-5'>
+                    <li><a className='text-semibold'>Profile</a></li>
                     <li><a>Experience</a></li>
                     <li><a>Job Interview Prep</a></li>
                 </ul>
             </div>
-            <div className='basis-5/7'>
+            <div className='basis-5/7 mt-6'>
                 <AlumProfileBody/>
             </div>
         </div>
