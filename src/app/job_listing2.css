@@ -3,7 +3,6 @@ body {
     max-width: 100%;
     min-width: fit-content;
     height: auto;
-    border: 2px solid rgb(248, 241, 241);
 }
 
 .grid-one {
