@@ -10,7 +10,7 @@ import { appliedJobs } from '../../cardData/appliedJobs'
 const AlumniJobInterviewPrep = () => {
   return (
     //container
-    <div className='flex flex-col w-full lg:w-[1440px] h-full lg:h-[2221px] bg-white'>
+    <div className='flex flex-col w-full h-full bg-white'>
         {/* nav */}
         <div className='flex basis-23/500'>
             <AlumniNavbar/>
@@ -45,7 +45,7 @@ const AlumniJobInterviewPrep = () => {
                     <span className='mx-2.5 font-semibold'>Applied</span>
                     <span className='mx-2.5'>Drafts</span>
                 </div>
-                <div className='mt-4 flex flex-col w-full lg:w-[515px] '>
+                <div className='mt-4 flex flex-col w-full'>
                     {appliedJobs.map((job, i) => (
                         <div key={i}>
                         <AppliedJobsCard
