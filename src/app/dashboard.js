@@ -13,7 +13,7 @@ const Dashboard = () => {
     return (
         <div className='w-full h-[3827px] bg-white flex flex-col items-center'>
             {/* Header */}
-            <div className='inline-flex flex-row items-start justify-between px-[100px] pt-3 pb-[80px] gap-10 w-[1440px] h-[80px] border-b'>
+            <div className='inline-flex flex-row items-start justify-between px-[100px] pt-3 pb-[80px] gap-10 w-full h-[80px] border-b'>
                 <div className="w-[95px] h-[65px] bg-[url('/assets/moringa0.png')] flex-none order-none self-stretch grow-0 mt-5" />
                 <div className='bg=[#0d0d0d] w-[200px] h-[80px] flex flex-row items-center justify-between'>
                     <a className='text-2xl text-black opacity-75'>Home</a>
@@ -114,7 +114,7 @@ const Dashboard = () => {
                 </div>
 
                 {/* Body, part 3: recent jobs... */}
-                <div className=' w-full h-[1371px] flex flex-col items-center justify-center'>
+                <div className=' w-full h-[1371px] flex flex-col items-center justify-center mb-20 mt-10'>
                     <div className='flex flex-col justify-between items-center w-[1108px] mt-10 mb-5'>
                         <div className='flex justify-between items-center w-[1108px] mt-10 mb-[20px]'>
                             <p className='text-2xl font-semibold text-moringa_blue'>
