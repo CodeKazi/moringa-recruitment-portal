@@ -14,7 +14,7 @@
 export default function Home() {
   return (
     <main>
-    <div className="container mx-auto h-full">
+    <div >
     <JobInfo />
     </div>
     </main>
