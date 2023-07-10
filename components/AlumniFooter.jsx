@@ -63,7 +63,7 @@ return (
             <h1 className='text-4xl text-white'>Map Area</h1>
         </div>
     </div>
-    <div className='bg-moringa_blue w-[1440px] h-[46px] flex justify-center'>
+    <div className='bg-moringa_blue w-full h-[46px] flex justify-center'>
         <p className='text-white text-sm p-3'>&copy; 2022 Moringa School, All Rights Reserved</p>
     </div>
 </div>

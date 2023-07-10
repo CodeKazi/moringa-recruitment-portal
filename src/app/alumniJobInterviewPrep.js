@@ -45,7 +45,7 @@ const AlumniJobInterviewPrep = () => {
                     <span className='mx-2.5 font-semibold'>Applied</span>
                     <span className='mx-2.5'>Drafts</span>
                 </div>
-                <div className='mt-4 flex flex-col w-full'>
+                <div className='mt-4 flex flex-col w-[498px]'>
                     {appliedJobs.map((job, i) => (
                         <div key={i}>
                         <AppliedJobsCard
@@ -65,7 +65,7 @@ const AlumniJobInterviewPrep = () => {
             </div>
         </div>
         {/* footer */}
-        <div className='bg-[#585858] flex basis-787/2500'>
+        <div className='bg-[#585858] flex basis-787/2500 w-full'>
             <AlumniFooter/>
         </div>
     </div>
