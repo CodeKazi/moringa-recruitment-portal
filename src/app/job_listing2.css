@@ -4,7 +4,6 @@ body {
     min-width: fit-content;
     height: auto;
     border: 2px solid rgb(248, 241, 241);
-    margin: 1rem 2rem ;
 }
 
 .grid-one {
@@ -33,23 +32,24 @@ body {
 }
 
 .footer-title {
-color: #FFF;
-text-align: center;
-font-size: 24px;
-font-family: Inter;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-family: Inter;
 }
 
 .footer-location {
-color: #FFF;
-text-align: center;
-font-size: 15px;
-font-family: Inter;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-family: Inter;
 }
+
 .contact {
-color: #FFF;
-text-align: center;
-font-size: 15px;
-font-family: Inter;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-family: Inter;
 }
 
 .last {
