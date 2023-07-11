@@ -47,14 +47,14 @@ const AlumProfileDraftJobs = () => {
                 </div>
                 <div className='mt-4 flex flex-col w-full lg:w-[515px] '>
                     {draftJobs.map((job, i) => (
-                        <div key={i}>
+                        <div key={i} className='p-2.5 border my-2.5 rounded-sm w-[750px]'>
                         <AlumDraftJobs
                             image={job.image}
                             title={job.title}
                             location={job.location}
                             isApplied={job.isApplied}
                             closeBtn={closeBtn}
-                            className='mb-20 text-moringa_blue'
+                            className='mb-20'
                         />
                         </div>
                     ))}

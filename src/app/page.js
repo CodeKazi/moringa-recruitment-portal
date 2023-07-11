@@ -3,8 +3,8 @@
 // import Dashboard from "./dashboard"
 // import AlumniProfileMain from "./alumniProfileMain"
 // import AlumniJobInterviewPrep from "./alumniJobInterviewPrep";
-// import AlumProfileDraftJobs from "./alumProfileDraftJobs"
-import SignIn from "./signin"
+import AlumProfileDraftJobs from "./alumProfileDraftJobs"
+// import SignIn from "./signin"
 
 
 
@@ -12,11 +12,12 @@ export default function Home() {
     return (
     <>
     <div className="content-center">
-      <SignIn/>
+      {/* <SignIn/> */}
       {/* <ResetPassword/> */}
       {/* <Dashboard/> */}
       {/* <AlumniProfileMain/> */}
       {/* <AlumniJobInterviewPrep/> */}
+      <AlumProfileDraftJobs/>
     </div>
     </>)
 
