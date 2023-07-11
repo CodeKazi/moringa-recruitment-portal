@@ -1,5 +1,5 @@
 // import Register from "./register"
-import JobListing from "./job_listing"
+// import JobListing from "./job_listing"
 // import JobInfo from "./job_listing2"
 // import ApplyModal from "./applymodal"
 // import ResetPassword from "./resetPassword2"
@@ -9,13 +9,13 @@ import JobListing from "./job_listing"
 //  import JobInfo from "./job_listing2"
 // import AlumniNavbar from "../../components/AlumniNavbar"
 // import AlumniFooter from "../../components/AlumniFooter"
-// import SignIn from "./signin"
+import SignIn from "./signin"
 
 export default function Home() {
   return (
     <main>
     <div >
-    <JobListing/>
+    <SignIn/>
     </div>
     </main>
   )
