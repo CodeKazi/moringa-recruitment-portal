@@ -17,8 +17,8 @@ const AlumProfileHeadline = ({
             <p className='text-xl font-medium text-white/90'>{title}</p>
             <p className='text-base font-medium text-white/80'>{location}</p>
           </div>
-          <div className='flex basis-1/10 w-1/12 h-full mt-10 justify-end items-start'>
-            <Image src={'assets/material-symbols_edit-square-outline.svg'} alt='logo' width={24} height={24} className='flex-shrink-0'/>
+          <div className='flex basis-1/10 h-full mt-10 justify-end items-start gap-[200px]'>
+            <Image src={'assets/material-symbols_edit-square-outline.svg'} alt='logo' width={24} height={24} className='flex-shrink-0 gap-[200px]'/>
           </div>
         </div>
   )

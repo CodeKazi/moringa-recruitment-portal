@@ -7,7 +7,7 @@ import AlumniProfileMain from "./alumniProfileMain"
 export default function Home() {
     return (
     <>
-    <div className="container mx-auto h-full">
+    <div>
       {/* <SignIn/> */}
       {/* <ResetPassword/> */}
       {/* <Dashboard/> */}

@@ -10,19 +10,19 @@ const AlumProfileBody = () => {
   // a.forEach(i => console.log(i.title))
 
   return (
-    <div className='flex flex-col w-[350px]'>
+    <div className='flex flex-col w-[350px] my-2.5'>
         <div className='flex flex-col'>
           <div className='flex flex-row h-full justify-between items-start'>
             <h1 className='text-2xl font-semibold text-moringa_blue mb-3'>
               About
             </h1>
-            <div className='flex flex-row basis-1/4 w-1/12 h-full justify-between items-start'>
+            <div className='flex flex-row basis-1/4 h-full justify-between items-start gap-4'>
               <Image src={'assets/material-symbols_edit-square-outline.svg'} alt='logo' width={24} height={24} className='flex-shrink-0 mx-4'/>
               <Image src={'assets/material-symbols_add.svg'} alt='logo' width={24} height={24} className='flex-shrink-0 mx-4'/>
           </div>
           </div>
           <div>
-            <p className='flex flex-col flex-shrink-0 w-[635px] mb-4'>
+            <p className='flex flex-col flex-shrink-0 w-[350px] mb-8 text-black/75'>
             {alumProfile.about.about}
             </p>
           </div>
@@ -31,7 +31,7 @@ const AlumProfileBody = () => {
             <h1 className='text-2xl font-semibold text-moringa_blue mb-3'>
               Experience
             </h1>
-            <div className='flex flex-col my-3'>
+            <div className='flex flex-col my-5'>
               {alumProfile.experience.map((obj, i) => (
               <div >
               <AlumniExperienceCard

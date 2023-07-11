@@ -13,9 +13,9 @@ const AlumniExperienceCard = ({
     <div className='my-10'>
         <h2 className='text-xl font-semibold text-moringa_blue/80'>{title}</h2>
         <p className='text-base text-black/75'>{organisation}</p>
-        <div className='flex flex-row justify-between w-auto'>
-            <span className='text-base text-black/75'>{fromto}</span>
-            <span className='text-base text-black/75'>{duration}</span>
+        <div className='flex flex-row justify-start w-[250px]'>
+            <span className='text-base text-black/75 mr-4'>{fromto}</span>
+            <span className='text-base text-black/75 ml-4'>{duration}</span>
         </div>
         <p className='text-base text-black/75'>{location}</p>
     </div>
