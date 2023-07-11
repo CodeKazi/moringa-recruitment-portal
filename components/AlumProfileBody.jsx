@@ -3,6 +3,7 @@ import { alumProfile } from '../cardData/alumProfile'
 import AlumniEducationCard from './AlumniEducationCard'
 import AlumniExperienceCard from './AlumniExperienceCard'
 import Image from 'next/image'
+import {BsDot} from 'react-icons/bs'
 
 const AlumProfileBody = () => {
   // const a = alumProfile.experience
@@ -17,7 +18,8 @@ const AlumProfileBody = () => {
               About
             </h1>
             <div className='flex flex-row basis-1/4 h-full justify-between items-start gap-4'>
-              <Image src={'assets/material-symbols_edit-square-outline.svg'} alt='logo' width={24} height={24} className='flex-shrink-0 mx-4'/>
+              <Image src={'assets/material-symbols_edit-square-outline.svg'} alt='logo' width={24} height={24} style={{color: "grey"}} className='flex-shrink-0 mx-4'/>
+              <BsDot/>
               <Image src={'assets/material-symbols_add.svg'} alt='logo' width={24} height={24} className='flex-shrink-0 mx-4'/>
           </div>
           </div>
@@ -33,9 +35,8 @@ const AlumProfileBody = () => {
             </h1>
             <div className='flex flex-col my-2.5'>
               {alumProfile.experience.map((obj, i) => (
-              <div >
+              <div key={i}>
               <AlumniExperienceCard
-                key={i}
                 title={obj.title}
                 organisation={obj.organisation}
                 fromto={obj.fromto}
@@ -52,9 +53,8 @@ const AlumProfileBody = () => {
               Education
             </h1>
             {alumProfile.education.map((obj, i) => (
-              <div className='my-3'>
+              <div key={i} className='my-3'>
               <AlumniEducationCard
-                key={i}
                 organisation={obj.organisation}
                 fromto={obj.fromto}
                 duration={obj.duration}

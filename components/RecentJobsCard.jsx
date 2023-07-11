@@ -1,11 +1,14 @@
 import React from 'react'
+import Image from 'next/image'
 
 const RecentJobsCard = ({title, image, location, tags}) => {
   return (
     <div className='flex h-[138px] flex-col justify-between items-center px-2.5 py-5 rounded border border-moringa_blue/25 border-solid'>
         <div className='flex flex-row p-5 m-5 justify-between items-start w-[498px]'>
             <div className='flex basis-2/7 items-'>
-                <img src={image}
+                <Image src={image}
+                    width={100}
+                    height={81}
                     className='flex justify-items-start '
                 />
             </div>
