@@ -31,7 +31,7 @@ const AlumniProfileMain = () => {
                     <li><a className='text-normal'>Job Interview Prep</a></li>
                 </ul>
             </div>
-            <div className='basis-5/7 my-10 mr-24'>
+            <div className='basis-5/7 m-10 mr-40'>
                 <AlumProfileBody/>
             </div>
         </div>

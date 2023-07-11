@@ -21,8 +21,8 @@ const AlumProfileBody = () => {
               <Image src={'assets/material-symbols_add.svg'} alt='logo' width={24} height={24} className='flex-shrink-0 mx-4'/>
           </div>
           </div>
-          <div>
-            <p className='flex flex-col flex-shrink-0 w-[350px] mb-8 text-black/75'>
+          <div className='w-[150px]'>
+            <p className='flex flex-col flex-shrink-0  mb-8 text-black/75'>
             {alumProfile.about.about}
             </p>
           </div>
@@ -31,7 +31,7 @@ const AlumProfileBody = () => {
             <h1 className='text-2xl font-semibold text-moringa_blue mb-3'>
               Experience
             </h1>
-            <div className='flex flex-col my-5'>
+            <div className='flex flex-col my-2.5'>
               {alumProfile.experience.map((obj, i) => (
               <div >
               <AlumniExperienceCard
