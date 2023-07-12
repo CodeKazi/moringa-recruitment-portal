@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import "./register.css"
 
 const Register = () => {
@@ -6,17 +7,17 @@ const Register = () => {
     <div>
 
       <div className='border-b-4 pl-20' mt-3 >
-        <img src='./assets/moringa0.png' alt='logo' />
+        <Image src='/assets/moringa0.png' alt='logo'  width='100' height='100' / >
       </div>
 
       <div className='container w-2/5 border-2 rounded-md  m-auto mt-16'>
 
         <div className='flex justify-center items-center'>
-          <img src='./assets/moringa1.png' alt='moringa logo' />
+          <Image src='/assets/moringa1.png' alt='moringa logo' width='333' height='133' />
         </div>
 
 
-        <div className='my-2'>
+        <div className='my-2 '>
           <h2 className='text-4xl font-semibold text-gray-600 mb-3 ml-36'>Sign Up</h2>
         </div>
 
