@@ -1,28 +1,40 @@
-.solid {
-    border-bottom: 3px solid #bbb;
+
+
+/* @media screen and (max-width: 600px) {
+   .col-75 {
+    width: 100%;
+    margin-top: 0;
+  }
+} */
+
+
+
+.container {
+  .input-fields {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
   }
 
-  .form-inputs {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 1rem;
-    margin: auto;
+  /* Media queries for responsive layouts */
 
+  @media screen and (max-width: 768px) {
+
+
+    .input-fields {
+      float: left;
+      width: 45%;
+      margin-top: 6px;
+    }
   }
 
-  .form-button {
-    padding: 1rem;
+  @media screen and (max-width: 480px) {
+
+
+    .input-fields {
+      float: left;
+      width: 45%;
+      margin-top: 6px;
+    }
   }
-
-.input-Fields{
-
-  padding: .4rem;
-  margin: auto;
-
-}
-
-.btn-btn {
-  padding: .4rem;
-  margin: auto;
-
 }
