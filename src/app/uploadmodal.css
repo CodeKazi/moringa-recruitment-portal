@@ -1,0 +1,23 @@
+body {
+  background-color: #FFF;
+}
+
+.modal { 
+    max-width: 885px;
+    min-width: 300px;
+    max-height: 553px;
+    min-height: 300px;
+    background-color: #FFF;
+  }
+  
+  .modal-content {
+    background-color: #FFF;
+    padding-top: 1rem;
+    padding-left: 3rem;
+  }
+
+  .delete p {
+    color: #CF1616;
+  }
+  
+  
