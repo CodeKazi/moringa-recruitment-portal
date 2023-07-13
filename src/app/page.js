@@ -10,9 +10,7 @@ import SignIn from "./signin"
 export default function Home() {
   return (
     <main>
-    <div className="container mx-auto h-full">
       <SignIn/>  
-    </div>
     </main>
   )
 }

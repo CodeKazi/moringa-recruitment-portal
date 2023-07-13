@@ -3,13 +3,13 @@ import Image from 'next/image'
 
 const RecentJobsCard = ({title, image, location, tags}) => {
   return (
-    <div className='flex h-52 p-20 m-15 justify-between items-center rounded border border-moringa_blue/25 border-solid'>
-        <div className='flex  w-[498px] p-2.5 m-2.5'>
-            <div className='flex basis-2/5 justify-center items-start m-2.5'>
+    <div className='flex h-[138px] flex-col justify-between items-center px-2.5 py-5 rounded border border-moringa_blue/25 border-solid'>
+        <div className='flex flex-row p-5 m-5 justify-between items-start w-[498px]'>
+            <div className='flex basis-2/7 items-'>
                 <Image src={image}
                     width={100}
                     height={81}
-                    alt='logo'
+                    className='flex justify-items-start '
                 />
             </div>
             <div className='flex flex-col p-2.5 m-2.5 items-start justify-center shadow-lg' >
