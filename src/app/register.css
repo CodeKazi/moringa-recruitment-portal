@@ -6,10 +6,16 @@ body {
     background: #101F3C;
 }
 
+input {
+    width: 540px;
+    max-width: 440px;
+    padding: 0.8rem;
+}
+
 @media (max-width: 1024px) {
     .container {
         width: 100%;
-        max-width: 400px;
+        max-width: 500px;
         left: auto;
         right: auto;
         top: 50px;
@@ -25,5 +31,6 @@ body {
     
     input {
         width: 100%;
+        max-width: 500px;
     }
 }
