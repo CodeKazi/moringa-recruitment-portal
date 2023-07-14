@@ -1,30 +1,33 @@
 import React from 'react'
+import Image from 'next/image'
 
 const RecentJobsCard = ({title, image, location, tags}) => {
   return (
     <div className='flex h-[138px] flex-col justify-between items-center px-2.5 py-5 rounded border border-moringa_blue/25 border-solid'>
         <div className='flex flex-row p-5 m-5 justify-between items-start w-[498px]'>
             <div className='flex basis-2/7 items-'>
-                <img src={image}
+                <Image src={image}
+                    width={100}
+                    height={81}
                     className='flex justify-items-start '
                 />
             </div>
-            <div className='flex basis-5/7 flex-col' >
-                <div className="w-full px-6 py-4 m-5">
-                    <p className="w-full mb-2 text-xl font-medium text-moringa_blue">
+            <div className='flex flex-col p-2.5 m-2.5 items-start justify-center shadow-lg' >
+                <div className="flex flex-col px-10 py-4 m-8 w-full">
+                    <p className=" mb-2 mt-5 text-xl font-medium text-moringa_blue">
                         {title}
                     </p>
-                    <p className="flex flex-col flex-shrink-0 w-[350px] text-base text-black/75">
+                    <p className="flex flex-col flex-shrink-0 text-base text-black/75">
                         {location}
                     </p>
                 </div>
                 <div className=" flex flex-row px-6 pt-4 pb-2">
                     {tags.map((tag, i) => (
-                        <p key={i}
-                            className={`inline-block rounded-full px-3 py-1 text-sm font-normal text-moringa_blue/80 mr-2 mb-2 ${i%2 === 0 ? "bg-gray-500" : "bg-orange-500}"}`}
+                        <span key={i}
+                            className={`inline-block rounded-full px-3 py-1 text-sm font-normal text-moringa_blue/80 mr-2 mb-2 ${i%2 === 0 ? "bg-gray-500" : "bg-orange-400"}`}
                         >
                             {tag}
-                        </p>
+                        </span>
                     ))}
                 </div>
             </div>

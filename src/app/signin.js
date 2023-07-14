@@ -2,11 +2,11 @@ import React from 'react'
 
 const SignIn = () => {
   return (
-    <div className='relative w-full lg:w-[1440px] h-full lg:h-[1024px] bg-white flex flex-col'>
-        <div className='absolute box-border flex flex-col items-start lg:px-[100px] lg:pt-3 lg:pb-[100px] gap-10 lg:w-[1440px] lg:h-[80px] lg:left-0 lg:top-0 border-b-1 border-b-solid border-b-black border-b-opacity-25'>
+    <div className='relative w-full h-full lg:h-[1024px] bg-white flex flex-col items-center'>
+        <div className='absolute box-border flex flex-col items-start lg:px-[100px] lg:pt-3 lg:pb-[100px] gap-10 w-full lg:h-[80px] lg:left-0 lg:top-0 border-b-1 border-b-solid border-b-black border-b-opacity-25'>
             <div className="w-[95px] h-[65px] bg-[url('/assets/moringa0.png')] flex-none order-none self-stretch grow-0"/>
         </div>
-        <div className='relative flex flex-col items-center justify-center border max-w-full lg:w-[790px] h-2/3 lg:h-[655px] lg:left-[325px] top-[100px] lg:top-[211px] border-solid border-1 border-moringa_blue/25'>
+        <div className='relative flex flex-col items-center justify-center border max-w-full lg:w-[790px]  h-2/3 lg:h-[655px]  top-[100px] lg:top-[211px] border-solid border-1 border-moringa_blue/25'>
             <div className=" w-[333px] h-[130px] bg-[url('/assets/moringa1.png')]"/>
             <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
                 <p className='w-32 text-4xl font-semibold tracking-normal text-left text-[#101F3CCC]'>
