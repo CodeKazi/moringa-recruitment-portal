@@ -1,0 +1,36 @@
+body {
+     background: #F5F5F5;
+}
+
+.register-btn {
+    background: #101F3C;
+}
+
+input {
+    width: 540px;
+    max-width: 440px;
+    padding: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+        max-width: 500px;
+        left: auto;
+        right: auto;
+        top: 50px;
+    }
+    
+    h2 {
+        margin-left: 1rem;
+    }
+    
+    .button {
+        margin-right: 4rem;
+    }
+    
+    input {
+        width: 100%;
+        max-width: 500px;
+    }
+}

@@ -3,6 +3,7 @@ import { alumProfile } from '../cardData/alumProfile'
 import AlumniEducationCard from './AlumniEducationCard'
 import AlumniExperienceCard from './AlumniExperienceCard'
 import Image from 'next/image'
+import {BsDot} from 'react-icons/bs'
 
 const AlumProfileBody = () => {
   // const a = alumProfile.experience
@@ -14,10 +15,10 @@ const AlumProfileBody = () => {
   //   ))
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col w-[350px] my-2.5'>
         <div className='flex flex-col'>
           <div className='flex flex-row h-full justify-between items-start'>
-            <h1 className='text-2xl font-semibold text-moringa_blue'>
+            <h1 className='text-2xl font-semibold text-moringa_blue mb-3'>
               About
             </h1>
             <div className='flex flex-row basis-1/4 w-1/12 h-full justify-between items-start'>
@@ -31,11 +32,11 @@ const AlumProfileBody = () => {
             </p>
           </div>
         </div>
-        <div className='flex flex-col'>
-            <h1 className='text-2xl font-semibold text-moringa_blue'>
+        <div className='flex flex-col mt-5'>
+            <h1 className='text-2xl font-semibold text-moringa_blue mb-3'>
               Experience
             </h1>
-            <div className='flex flex-col'>
+            <div className='flex flex-col my-2.5'>
               {alumProfile.experience.map((obj, i) => (
               <div key={i} >
                 {/* <p>{i}</p> */}
@@ -53,8 +54,8 @@ const AlumProfileBody = () => {
             </div>
             
         </div>
-        <div className='flex flex-col'>
-            <h1 className='text-2xl font-semibold text-moringa_blue'>
+        <div className='flex flex-col mt-5'>
+            <h1 className='text-2xl font-semibold text-moringa_blue mb-3'>
               Education
             </h1>
             {alumProfile.education.map((obj, i) => (
