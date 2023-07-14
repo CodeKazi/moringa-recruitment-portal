@@ -41,8 +41,8 @@ const AlumProfileBody = () => {
               <div key={i} >
                 {/* <p>{i}</p> */}
                 {/* {console.log(obj.title)} */}
-                {/* {obj.title} */} 
-              <AlumniExperienceCard 
+                {/* {obj.title} */}
+              <AlumniExperienceCard
                 title={obj.title}
                 organisation={obj.organisation}
                 fromto={obj.fromto}

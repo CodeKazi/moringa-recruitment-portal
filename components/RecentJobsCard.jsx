@@ -7,9 +7,9 @@ const RecentJobsCard = ({title, image, location, tags}) => {
         <div className='flex flex-row p-5 m-5 justify-between items-start w-[498px]'>
             <div className='flex basis-2/7 items-'>
                 <Image src={image}
-                    alt='logo'
                     width={81}
                     height={61}
+                    alt='logo'
                     className='flex justify-items-start '
                 />
             </div>
