@@ -16,7 +16,7 @@ const AlumniJobInterviewPrep = () => {
             <AlumniNavbar/>
         </div>
         {/* headline */}
-        <div className='bg-moringa_blue/80 flex basis-81/500 '>
+        <div className='bg-moringa_blue/80 flex basis-81/500 h-[300px]'>
             <AlumProfileHeadline
                 name={alumProfile.headline.name}
                 title={alumProfile.headline.title}
@@ -45,7 +45,7 @@ const AlumniJobInterviewPrep = () => {
                     <span className='mx-2.5 font-semibold'>Applied</span>
                     <span className='mx-2.5'>Drafts</span>
                 </div>
-                <div className='mt-4 flex flex-col w-full lg:w-[515px] '>
+                <div className='mt-4 flex flex-col w-[850px]'>
                     {appliedJobs.map((job, i) => (
                         <div key={i}>
                         <AppliedJobsCard
@@ -65,7 +65,7 @@ const AlumniJobInterviewPrep = () => {
             </div>
         </div>
         {/* footer */}
-        <div className='bg-[#585858] flex basis-787/2500'>
+        <div className='bg-[#585858] flex basis-787/2500 w-full'>
             <AlumniFooter/>
         </div>
     </div>

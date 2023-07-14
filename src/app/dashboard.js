@@ -13,7 +13,7 @@ const Dashboard = () => {
     return (
         <div className='w-full h-[3827px] bg-white flex flex-col items-center'>
             {/* Header */}
-            <div className='inline-flex flex-row items-start justify-between px-[100px] pt-3 pb-[80px] gap-10 w-[1440px] h-[80px] border-b'>
+            <div className='inline-flex flex-row items-start justify-between px-[100px] pt-3 pb-[80px] gap-10 w-full h-[80px] border-b'>
                 <div className="w-[95px] h-[65px] bg-[url('/assets/moringa0.png')] flex-none order-none self-stretch grow-0 mt-5" />
                 <div className='bg=[#0d0d0d] w-[200px] h-[80px] flex flex-row items-center justify-between'>
                     <a className='text-2xl text-black opacity-75'>Home</a>
@@ -30,7 +30,7 @@ const Dashboard = () => {
             </div>
 
             
-            <div className='w-[1440px] h-[1544px] flex flex-col'>
+            <div className='w-full h-[1544px] flex flex-col'>
                 {/* Body, part 1: alumni portal & top jobs */}
                 <div className='basis-2/7 border-b mb-2.5'>
                     <div>
@@ -84,11 +84,13 @@ const Dashboard = () => {
                         <div className='grid grid-cols-2 gap-[52px] w-[1110px] items-start mb-10'>
                             {
                                 topJobs.map((job, i) => (
-                                    <TopJobsCard key={i}
+                                    <div key={i}>
+                                    <TopJobsCard
                                         title={job.title}
                                         description={job.description}
                                         tags={job.tags}
                                     />
+                                    </div>
                                 ))
                             }
                         </div>
@@ -96,7 +98,7 @@ const Dashboard = () => {
                 </div>
 
                 {/* Body, part 2: morninga news*/}
-                <div className='bg-moringa_blue opacity-80 w-[1440px] h-[334px] flex flex-row flex-shrink-0 items-center justify-center px-10'>
+                <div className='bg-moringa_blue opacity-80 w-full h-[334px] flex flex-row flex-shrink-0 items-center justify-center px-10'>
                     <div className='basis-1/2 px-20'>
                         <h2 className='text-2xl font-semibold text-white'>Morninga News</h2>
                         <p className='w-[478px] flex flex-col flex-shrink-0 text-lg text-white mt-5 mb-1'>
@@ -112,7 +114,7 @@ const Dashboard = () => {
                 </div>
 
                 {/* Body, part 3: recent jobs... */}
-                <div className='bg-[#848484] w-[1440px] h-[1371px] flex flex-col items-center justify-center'>
+                <div className=' w-full h-[1371px] flex flex-col items-center justify-center mb-20 mt-10'>
                     <div className='flex flex-col justify-between items-center w-[1108px] mt-10 mb-5'>
                         <div className='flex justify-between items-center w-[1108px] mt-10 mb-[20px]'>
                             <p className='text-2xl font-semibold text-moringa_blue'>
@@ -139,9 +141,9 @@ const Dashboard = () => {
                 </div>
 
                 {/* Footer */}
-                <div className='bg-[#484848] w-[1440px] h-[498px] flex flex-col flex-shrink-0'>
-                    <div className='bg-moringa_blue opacity-50 w-[1440px] h-[497.712px] inline-flex flex-row flex-shrink-0'>
-                        <div className=' basis-2/5'>
+                <div className='bg-[#484848] w-full h-[498px] flex flex-col flex-shrink-0'>
+                    <div className='bg-moringa_blue opacity-50 w-full h-[497.712px] inline-flex flex-row flex-shrink-0'>
+                        <div className='basis-2/5 w-full'>
                             <div className='mt-[69px] ml-[66px]'>
                                 <ul className='flex flex-col items-center'>
                                     <li>
@@ -193,11 +195,11 @@ const Dashboard = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className='bg-[#3f3f3f] basis-3/5 flex items-center justify-center'>
+                        <div className='bg-[#3f3f3f] basis-3/5 w-full flex items-center justify-center'>
                             <h1 className='text-4xl text-white'>Map Area</h1>
                         </div>
                     </div>
-                    <div className='bg-moringa_blue w-[1440px] h-[46px] flex justify-center'>
+                    <div className='bg-moringa_blue w-full h-[46px] flex justify-center'>
                         <p className='text-white text-sm p-3'>&copy; 2022 Moringa School, All Rights Reserved</p>
                     </div>
                 </div>

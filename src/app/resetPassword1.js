@@ -6,7 +6,7 @@ const ResetPassword = () => {
         <div className=' absolute box-border flex flex-col items-start px-[100px] pt-3 pb-[100px] gap-10 w-[1440px] h-[80px] left-0 top-0 border-b-1 border-b-solid border-b-black border-b-opacity-25'>
             <div className="w-[95px] h-[65px] bg-[url('/assets/moringa0.png')] flex-none order-none self-stretch grow-0"/>
         </div>
-        <div className=' relative flex flex-col items-center justify-center border w-[790px] h-[655px] left-[325px] top-[211px] border-solid border-1 border-moringa_blue/25'>
+        <div className='relative flex flex-col items-center justify-center border max-w-full lg:w-[790px] h-2/3 lg:h-[655px] top-[100px] lg:top-[211px] border-solid border-1 border-moringa_blue/25'>
             <div className="w-[333px] h-[130px] bg-[url('/assets/moringa1.png')]"/>
             <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
                 <p className='h-10 text-3xl font-semibold tracking-normal text-left text-[#101F3CCC]'>
@@ -52,7 +52,7 @@ const ResetPassword = () => {
                     <div>
                     <button
                         type="submit"
-                        className="flex w-48 h-10 justify-center rounded-md bg-[#101f3c] px-3 py-1.5 text-sm font-semibold leading-6 text-white"
+                        className="flex w-48 h-10 justify-center rounded-md bg-[#101f3c] px-3 py-1.5 text-sm font-semibold leading-6 text-white mb-4"
                     >
                         Reset
                     </button>

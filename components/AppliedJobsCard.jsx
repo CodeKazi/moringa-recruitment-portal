@@ -13,7 +13,7 @@ const AppliedJobsCard = ({
         <div className='flex w-20 h-16 p-5 items-start px-2.5'>
             <Image src={image} alt='logo' width={81} height={61}/>
         </div>
-        <div className='flex h-16 flex-col justify-between items-start w-full lg:w-[350px] px-2.5'>
+        <div className='flex h-16 flex-col justify-between items-start w-full lg:w-[550px] px-2.5'>
             <h1 className='text-xl not-italic font-medium text-moringa_blue/80'>
                 {title}
             </h1>
