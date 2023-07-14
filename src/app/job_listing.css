@@ -1,0 +1,106 @@
+body {
+    background-color: white;
+    max-width: 100%;
+    min-width: fit-content;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.logo {
+    display: flex;
+    cursor: pointer;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+}
+
+.find {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.job hr {
+    width: 300px;
+}
+
+.location hr {
+    width: 150px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 30px;
+    margin-left: 10rem;
+}
+
+@media (max-width: 850px) {
+    .grid-container {
+        margin-left: 1rem;
+        margin-right: 0.8rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination a {
+    border: 1px solid black;
+}
+
+.footer-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-family: Inter;
+}
+
+.footer-location {
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-family: Inter;
+}
+
+.contact {
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-family: Inter;
+}
+
+.last {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 16, 46, 0.8);
+}
+
+.last p {
+    text-align: center;
+    color: #FFF;
+    font-size: 13px;
+}
