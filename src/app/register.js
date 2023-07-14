@@ -1,44 +1,58 @@
 import React from 'react'
+import Image from 'next/image'
 import "./register.css"
 
 const Register = () => {
   return (
-    <div className='container'>
+    <div>
 
-      <h2>Sign Up</h2>
-      <form>
-        <div className='inputs'>
-          <label>First Name</label>
-          <input type='text'></input>
-          <p>Please enter a minimum of 3 characters</p>
+      <div className='border-b-2 pl-20' >
+        <Image src='/assets/moringa0.png' alt='logo'  width='100' height='100' / >
+      </div>
+
+      <div className='container w-2/5 max-w-7xl border-2 rounded-md  m-auto mt-12'>
+
+        <div className='flex justify-center items-center'>
+          <Image src='/assets/moringa1.png' alt='moringa logo' width='333' height='133' />
         </div>
 
-        <div className='inputs'>
-          <label>Last Name</label>
-          <input type='text'></input>
-          <p>Please enter a minimum of 3 characters</p>
+
+        <div className='my-2 flex'>
+          <h2 className='text-4xl font-semibold text-gray-600 ml-28 mb-3 '>Sign Up</h2>
         </div>
 
-        <div className='inputs'>
-          <label>Email</label>
-          <input type='email'></input>
-          <p>Please enter a valid email</p>
+        <div className='flex justify-center items-center mr-12'>
+
+          <form className='flex flex-col'>
+
+            <label className='text-xl font-normal'>First Name</label>
+            <input type='text' className='border border-gray-400 rounded-md cursor-pointer'></input>
+            <p className='text-sm font-normal text-red-600 mb-5'>Please enter a minimum of 3 characters</p>
+
+            <label className='text-xl font-normal'>Last Name</label>
+            <input type='text' className='border border-gray-400 rounded-md  cursor-pointer'></input>
+            <p className='text-sm font-normal text-red-600 mb-5'>Please enter a minimum of 3 characters</p>
+
+            <label className='text-xl font-normal'>Email</label>
+            <input type='email' className='border border-gray-400 rounded-md  cursor-pointer'></input>
+            <p className='text-sm font-normal text-red-600 mb-5'>Please enter a valid email</p>
+
+            <label className='text-xl font-normal'>Password</label>
+            <input type='password' className='border border-gray-400 rounded-md mb-5 cursor-pointer'></input>
+
+            <label className='text-xl font-normal'>Confirm Password</label>
+            <input type='password' className='border border-gray-400 rounded-md cursor-pointer'></input>
+            <p className='text-sm font-normal text-red-600 mb-5'>Passwords do not match</p>
+
+            <div>
+              <button className='register-btn text-white rounded-md py-2.5 px-14 text-xl font-medium mb-12'>Register</button>
+
+            </div>
+
+          </form>
         </div>
+      </div>
 
-        <div className='inputs'>
-          <label>Password</label>
-          <input type='password'></input>
-        </div>
-
-        <div className='inputs'>
-          <label>Confirm Password</label>
-          <input type='password'></input>
-          <p>Passwords do not match</p>
-        </div>
-
-        <button type='submit' className='button'>Register</button>
-
-      </form>
     </div>
   )
 }
