@@ -1,16 +1,15 @@
 body {
     background-color: white;
-    width: 65rem;
+    max-width: 100%;
+    min-width: fit-content;
     height: auto;
-    border: 2px solid rgb(248, 241, 241);
-    margin: 1rem auto;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-   
+
 }
 
 .logo {
@@ -23,42 +22,13 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     cursor: pointer;
-    
-}
 
-.profile {
-    display: flex;
-    justify-content: flex-start;
-}
-
-button {
-     background: rgba(16, 31, 60, 0.8);
-     width: 70px;
-     font-size: 15px;
-     border-radius: 5px;
-     margin-top: 1.5rem;
-     padding: 0.2rem;
-     color: #FFF;
-     cursor: pointer;
-}
-
-.top-section {
-    height: 10rem;
-    background-color: rgba(16, 31, 60, 0.8); 
-    margin-top: -0.3rem;
-    color: #FFF;
 }
 
 .find {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.find p {
-    letter-spacing: 0.8px;
-    font-size: 25px;
-    font-weight: 400;
 }
 
 .controls {
@@ -75,141 +45,51 @@ button {
     width: 150px;
 }
 
-.search {
-    width: 80px;
-    height: 35px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: rgb(247, 74, 6);
-    cursor: pointer;
-}
-
- .specific {
-    display: flex;
-    flex-direction: column;
-}
-
-.categories {
-    font-size: 1rem;
-    font-weight: 500;
-    margin: 1rem;
-}
-
-.frontend {
-    margin: 1.3rem;
-    margin-top: 0;
-}
-
-ul {
-    list-style: none;
-     margin-top: 0;
-}
-
-.first {
-    margin-top: -0.8rem;
-}
-
-li {
-    font-size: 0.9rem;
-    margin-left: 1rem;
-    margin-top: 0.2rem;
-    cursor: pointer;
-   
-}
-
-.level, .jobtype {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-left: 1rem;
-}
-
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -44rem;
-}
-
-.center-titles {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-    gap: 25px;
+    grid-template-rows: repeat(7, 1fr);
+    gap: 30px;
     margin-left: 10rem;
 }
 
-.grids {
-    border: 1px solid black;
-    
+@media (max-width: 850px) {
+    .grid-container {
+        margin-left: 1rem;
+        margin-right: 0.8rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
-
-@media (max-width: 268px) {
-  .grid-container {
-    margin-left: 1rem;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-  }
-  
-}
-
- .company {
-   font-size: 15px;
-   font-weight: 600;
-   
-}
-.specific-details {
-    font-size: 15px;
-    
-} 
 
 .pagination {
     display: flex;
     align-items: center;
     justify-content: center;
-   
 }
 
 .pagination a {
-    text-decoration: none;
     border: 1px solid black;
-    margin:  5px;
-    color: black;
-    width: 28px;
-    height: 28px
-     
-}
-
-.footer {
-    height: 15rem;
-    background-color: rgba(16, 31, 60, 0.8);
-    color: #FFF;
 }
 
 .footer-title {
-color: #FFF;
-text-align: center;
-font-size: 24px;
-font-family: Inter;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-family: Inter;
 }
 
 .footer-location {
-color: #FFF;
-text-align: center;
-font-size: 15px;
-font-family: Inter;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-family: Inter;
 }
+
 .contact {
-color: #FFF;
-text-align: center;
-font-size: 15px;
-font-family: Inter;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-family: Inter;
 }
 
 .last {
@@ -219,7 +99,7 @@ font-family: Inter;
     background-color: rgba(0, 16, 46, 0.8);
 }
 
-.last p  {
+.last p {
     text-align: center;
     color: #FFF;
     font-size: 13px;
