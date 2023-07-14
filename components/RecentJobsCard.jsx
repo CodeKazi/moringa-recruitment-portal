@@ -1,5 +1,5 @@
-import React from 'react'
 import Image from 'next/image'
+import React from 'react'
 
 const RecentJobsCard = ({title, image, location, tags}) => {
   return (
@@ -7,8 +7,9 @@ const RecentJobsCard = ({title, image, location, tags}) => {
         <div className='flex flex-row p-5 m-5 justify-between items-start w-[498px]'>
             <div className='flex basis-2/7 items-'>
                 <Image src={image}
-                    width={100}
-                    height={81}
+                    alt='logo'
+                    width={81}
+                    height={61}
                     className='flex justify-items-start '
                 />
             </div>
