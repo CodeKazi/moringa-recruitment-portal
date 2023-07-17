@@ -157,7 +157,7 @@ const JobInfo = () => {
 
                 <div className='flex items-center justify-between cursor-pointer p-6'>
                     <h2 className='text-3xl font-semibold ml-40 mt-4 '>More Jobs Like This</h2>
-                    <p className='flex text-lg  font-normal mr-72 mt-4'>View All <span><img src='./icons/mdi_arrow-right-thin.png' /></span></p>
+                    <p className='flex text-lg  font-normal mr-72 mt-4'>View All <span><Image src='./icons/mdi_arrow-right-thin.png' width='24' height='24' /></span></p>
                 </div>
 
             </section>
@@ -168,15 +168,15 @@ const JobInfo = () => {
                 {moreJobs.map((job, i) => (
                     <div key={i} className='grids flex max-w-xl min-w-fit border border-gray-400'>
                         <div className='flex items-center ml-5'>
-                            <img src={job.image} alt='logo' />
+                            <Image src={job.image} alt='logo' width='81' height='61' />
                         </div>
                         <div className='ml-12 mt-3'>
-                            <p className='text-2xl font-medium'>{job.title}</p>
-                            <p className='text-lg font-normal'>{job.location}</p>
-                            <div>
+                            <p className='text-2xl font-medium mb-1'>{job.title}</p>
+                            <p className='text-lg font-normal mb-2'>{job.location}</p>
+                            <div className='mb-3'>
                                 {job.tags.map((tag, i) => (
                                     <span key={i}
-                                        className={`text-base font-normal mr-3 mb-2 p-px cursor-pointer rounded-3xl ${i % 2 === 0 ? 'bg-gray-500' : 'bg-orange-500'}`}>{tag}</span>
+                                        className={`text-base font-normal mr-3 mb-2 py-1 px-2.5 cursor-pointer rounded-3xl ${i % 2 === 0 ? 'bg-gray-500' : 'bg-orange-500'}`}>{tag}</span>
                                 ))}
                             </div>
                         </div>
