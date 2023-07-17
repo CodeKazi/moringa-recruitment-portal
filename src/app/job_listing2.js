@@ -171,12 +171,12 @@ const JobInfo = () => {
                             <Image src={job.image} alt='logo' width='81' height='61' />
                         </div>
                         <div className='ml-12 mt-3'>
-                            <p className='text-2xl font-medium'>{job.title}</p>
-                            <p className='text-lg font-normal'>{job.location}</p>
-                            <div>
+                            <p className='text-2xl font-medium mb-1'>{job.title}</p>
+                            <p className='text-lg font-normal mb-2'>{job.location}</p>
+                            <div className='mb-3'>
                                 {job.tags.map((tag, i) => (
                                     <span key={i}
-                                        className={`text-base font-normal mr-3 mb-2 p-px cursor-pointer rounded-3xl ${i % 2 === 0 ? 'bg-gray-500' : 'bg-orange-500'}`}>{tag}</span>
+                                        className={`text-base font-normal mr-3 mb-2 py-1 px-2.5 cursor-pointer rounded-3xl ${i % 2 === 0 ? 'bg-gray-500' : 'bg-orange-500'}`}>{tag}</span>
                                 ))}
                             </div>
                         </div>

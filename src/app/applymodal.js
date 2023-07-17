@@ -18,7 +18,7 @@ const ApplyModal = () => {
 
           <div className='contact-info pl-24'>
             <h4 className='text-lg font-medium my-2'>Contact Information</h4>
-            <Image src='./assets/Ismaili.png' alt='User Profile' width='74' height='74' className='mb-3' />
+            <Image src='/assets/Ismaili.png' alt='User Profile' width='74' height='74' className='mb-3' />
             <p className='text-lg font-medium mb-2'>Ismaili Sarr</p>
           </div>
 

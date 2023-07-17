@@ -32,8 +32,8 @@ const JobListing = () => {
 
           <form className='flex justify-center gap-12'>
 
-            <input type='text' placeholder='Job title or keyword' className='placeholder:text-white placeholder:text-xl placeholder:font-medium pl-2 pr-24'/>
-            <input type='text' placeholder='Location' className='placeholder:text-white placeholder:text-xl placeholder:font-medium pl-2 focus:outline-none'/>
+            <input type='text' placeholder='Job title or keyword' className='placeholder:text-white placeholder:text-xl placeholder:font-medium pl-2 pr-24 cursor-pointer'/>
+            <input type='text' placeholder='Location' className='placeholder:text-white placeholder:text-xl placeholder:font-medium pl-2 focus:outline-none cursor-pointer'/>
             <button className='bg-moringa_orange mt-0 font-semibold text-lg py-2.5 px-10 rounded-md cursor-pointer'>Search</button>
 
           </form>
@@ -169,12 +169,12 @@ const JobListing = () => {
                  
                 </div>
                 <div className='ml-10 mt-3'>
-                  <p className='text-xl font-semibold mb-2'>{card.title}</p>
-                  <p className='text-lg font-medium mb-3'>{card.location}</p>
+                  <p className='text-lg font-semibold mb-2'>{card.title}</p>
+                  <p className='text-base font-normal mb-3'>{card.location}</p>
                   
                    <div className='mb-3'>
                     {card.tags.map((tag, index) =>(
-                      <span key={index} className={`text-lg font-normal cursor-pointer mr-3  py-1 px-2.5 rounded-3xl ${index % 2 === 0 ?  'bg-gray-500' : 'bg-orange-500' }`}>{tag}</span>
+                      <span key={index} className={`text-base font-normal cursor-pointer mr-3  py-1 px-2.5 rounded-3xl ${index % 2 === 0 ?  'bg-gray-500' : 'bg-orange-500' }`}>{tag}</span>
 
                     ))}
                    </div>
