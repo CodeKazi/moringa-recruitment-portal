@@ -1,7 +1,7 @@
 import React from 'react'
 import "./job_listing.css"
 import Image from 'next/image'
-import { recentJobs } from '../../cardData/recentjobs'
+import { recentJobs } from '../../../cardData/recentjobs'
 
 const JobListing = () => {
   return (

@@ -1,11 +1,11 @@
 import React from 'react'
-import AlumniNavbar from '../../components/AlumniNavbar'
-import AlumniFooter from '../../components/AlumniFooter'
-import AlumProfileHeadline from '../../components/AlumProfileHeadline'
-import AppliedJobsCard from '../../components/AppliedJobsCard'
-import { alumProfile } from '../../cardData/alumProfile'
+import AlumniNavbar from '../../../../components/AlumniNavbar'
+import AlumniFooter from '../../../../components/AlumniFooter'
+import AlumProfileHeadline from '../../../../components/AlumProfileHeadline'
+import AppliedJobsCard from '../../../../components/AppliedJobsCard'
+import { alumProfile } from '../../../../cardData/alumProfile'
 import closeBtn from 'public/assets/iconoir_cancel.svg'
-import { appliedJobs } from '../../cardData/appliedJobs'
+import { appliedJobs } from '../../../../cardData/appliedJobs'
 
 const AlumniJobInterviewPrep = () => {
   return (

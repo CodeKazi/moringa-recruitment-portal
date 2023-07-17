@@ -10,7 +10,7 @@
 // import AlumProfileDraftJobs from "./alumProfileDraftJobs"
 // import AlumniNavbar from "../../components/AlumniNavbar"
 // import AlumniFooter from "../../components/AlumniFooter"
-import SignIn from "./signin"
+import SignIn from "./login/page"
 
 export default function Home() {
   return (
