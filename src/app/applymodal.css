@@ -6,41 +6,21 @@
   left: 0;
   top: 0;
   width: 100%; 
+  max-width: 100%;
+  min-width: 300px;
   height: 100%; 
   overflow: auto; 
-  background: rgba(0, 0, 0, 0.70);
+  background: rgba(0, 0, 0, 0.40);
   /* background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4);  */
 }
 
-/* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
   padding-top: 1rem;
-  padding-left: 3rem;
   border: 1px solid #888;
   width: 50%;
-}
-
-.top .apply {
-    color: rgba(16, 31, 60, 0.80);
-    font-size: 20px;
-}
-
-input {
- border: 1px solid black;
-}
-
-.submit {
-  background-color: rgba(255, 105, 0, 0.8);
-}
-
-/* The Close Button */
-.close {
-  color: rgb(0,0,1);
-  font-size: 35px;
-  font-weight: 500;
 }
 
 .close:hover,
@@ -49,8 +29,13 @@ input {
   cursor: pointer;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 826px) {
   input {
     width: 90%;
+  }
+  .top, 
+  .contact-info,
+  .form {
+    padding-left: 1rem;
   }
 }
