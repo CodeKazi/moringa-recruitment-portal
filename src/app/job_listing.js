@@ -28,10 +28,16 @@ const JobListing = () => {
           <p className='text-white text-4xl font-medium -mt-12 mb-4'>Find your job</p>
         </div>
 
-        <div className='controls mt-8 text-xl font-medium'>
-          <p className='job '>Job title or keyword <hr className='mt-2' /></p>
-          <p className='location'>Location <hr className='mt-2' /></p>
-          <button className='bg-moringa_orange mt-0 font-semibold text-lg py-2.5 px-10 rounded-md cursor-pointer'>Search</button>
+        <div className='mt-5 controls'>
+
+          <form className='flex justify-center gap-12'>
+
+            <input type='text' placeholder='Job title or keyword' className='placeholder:text-white placeholder:text-xl placeholder:font-medium pl-2 pr-24'/>
+            <input type='text' placeholder='Location' className='placeholder:text-white placeholder:text-xl placeholder:font-medium pl-2 focus:outline-none'/>
+            <button className='bg-moringa_orange mt-0 font-semibold text-lg py-2.5 px-10 rounded-md cursor-pointer'>Search</button>
+
+          </form>
+
         </div>
 
       </section>
@@ -185,13 +191,13 @@ const JobListing = () => {
       </section>
 
       <div className='pagination my-3'>
-        <a href='#' className='py-1.5 px-3'><Image src='./icons/gg_push-chevron-left.png ' width='24' height='24' /></a>
-        <a href='#' className='py-1.5 px-3 ml-4'><Image src='./icons/gg_chevron-left.png' width='25' height='25' /></a>
+        <a href='#' className='py-1.5 px-3'><Image src='./icons/gg_push-chevron-left.png' alt='back-btn ' width='24' height='24' /></a>
+        <a href='#' className='py-1.5 px-3 ml-4'><Image src='./icons/gg_chevron-left.png' alt='back-btn' width='25' height='25' /></a>
         <a href='#' className='py-1 px-5 ml-4 text-xl font-medium'>1</a>
         <a href='#' className='py-1 px-5 ml-4 text-xl font-medium'>2</a>
         <a href='#' className='py-1 px-5 ml-4 text-xl font-medium'>3</a>
-        <a href='#' className='py-1.5 px-3 ml-4'><Image src='./icons/gg_chevron-right.png' width='25' height='25'/></a>
-        <a href='#' className='py-1.5 px-3 ml-4'><Image src='./icons/gg_push-chevron-right.png' width='24' height='24'/></a>
+        <a href='#' className='py-1.5 px-3 ml-4'><Image src='./icons/gg_chevron-right.png' alt='foward-btn' width='25' height='25'/></a>
+        <a href='#' className='py-1.5 px-3 ml-4'><Image src='./icons/gg_push-chevron-right.png' alt='foward-btn' width='24' height='24'/></a>
       </div>
 
       <section className='footer bg-moringa_blue text-white p-14'>
