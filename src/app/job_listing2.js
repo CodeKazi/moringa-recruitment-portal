@@ -157,7 +157,7 @@ const JobInfo = () => {
 
                 <div className='flex items-center justify-between cursor-pointer p-6'>
                     <h2 className='text-3xl font-semibold ml-40 mt-4 '>More Jobs Like This</h2>
-                    <p className='flex text-lg  font-normal mr-72 mt-4'>View All <span><img src='./icons/mdi_arrow-right-thin.png' /></span></p>
+                    <p className='flex text-lg  font-normal mr-72 mt-4'>View All <span><Image height={15} width={15} alt='logo' src='./icons/mdi_arrow-right-thin.png' /></span></p>
                 </div>
 
             </section>
@@ -168,7 +168,7 @@ const JobInfo = () => {
                 {moreJobs.map((job, i) => (
                     <div key={i} className='grids flex max-w-xl min-w-fit border border-gray-400'>
                         <div className='flex items-center ml-5'>
-                            <img src={job.image} alt='logo' />
+                            <Image height={15} width={15} src={job.image} alt='logo' />
                         </div>
                         <div className='ml-12 mt-3'>
                             <p className='text-2xl font-medium'>{job.title}</p>
