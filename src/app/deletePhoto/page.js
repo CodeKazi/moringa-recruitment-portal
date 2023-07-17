@@ -3,7 +3,7 @@ import React from 'react'
 import { useState } from 'react'
 import Image from 'next/image'
 import './uploadmodal.css'
-import DeleteConfirmation from './deleteconfirmation'
+import DeleteConfirmation from '../deleteConfirmation/page'
 
 const PictureDelete = () => {
 
