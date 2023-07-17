@@ -10,6 +10,9 @@
 // import AlumProfileDraftJobs from "./alumProfileDraftJobs"
 // import AlumniNavbar from "../../components/AlumniNavbar"
 // import AlumniFooter from "../../components/AlumniFooter"
+// import AppliedJobs from "./appliedjobs"
+// import PictureUpload from "./uploadmodal"
+// import PictureDelete from "./deletephoto"
 // import JobListing from "./job_listing"
 import SignIn from "./signin"
 
