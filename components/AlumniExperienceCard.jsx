@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import {BsDot} from 'react-icons/bs'
 
 const AlumniExperienceCard = ({

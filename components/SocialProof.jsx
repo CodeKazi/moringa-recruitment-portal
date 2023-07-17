@@ -1,10 +1,10 @@
-import React from 'react'
 import Image from 'next/image'
+import React from 'react'
 
 const SocialProof = ({image}) => {
   return (
     <div className='flex'>
-        <Image src={image} width={81} height={61}/>
+        <Image src={image} alt='logo' width={81} height={61}/>
     </div>
   )
 }
