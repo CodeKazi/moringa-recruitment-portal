@@ -8,21 +8,23 @@ const ResetPassword = () => {
         </div>
         <div className='relative flex flex-col items-center justify-center border max-w-full lg:w-[790px] h-2/3 lg:h-[655px] left-[550px] top-[100px] lg:top-[211px] border-solid border-1 border-moringa_blue/25'>
             <div className="w-[333px] h-[130px] bg-[url('/assets/moringa1.png')]"/>
-            <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm p-2 lg:p-0">
+            <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
                 <p className='h-10 text-3xl font-semibold tracking-normal text-left text-[#101F3CCC]'>
-                Reset Password
+                    Reset Password
                 </p>
                 <form className="space-y-6" action="#" method="POST">
-                <div>
-                    <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                        Email address
-                    </label>
+                    <div>
+                    <div className="flex items-center justify-between">
+                        <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                            Enter new password
+                        </label>
+                    </div>
                     <div className="mt-2">
                         <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        autoComplete="email"
+                        id="password1"
+                        name="password1"
+                        type="password"
+                        autoComplete="current-password"
                         required
                         className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-moringa_blue sm:text-sm sm:leading-6"
                         />
@@ -30,9 +32,21 @@ const ResetPassword = () => {
                     </div>
 
                     <div>
-                        <div className='h-10 text-sm font-light leading-5 tracking-normal text-left text-black/75'>
-                            We will send you an email with instructions on how to reset your password
-                        </div>
+                    <div className="flex items-center justify-between">
+                        <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                        Confirm password
+                        </label>
+                    </div>
+                    <div className="mt-2">
+                        <input
+                        id="password"
+                        name="password"
+                        type="password"
+                        autoComplete="current-password"
+                        required
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-moringa_blue sm:text-sm sm:leading-6"
+                        />
+                    </div>
                     </div>
 
                     <div>
@@ -40,7 +54,7 @@ const ResetPassword = () => {
                         type="submit"
                         className="flex w-48 h-10 justify-center rounded-md bg-[#101f3c] px-3 py-1.5 text-sm font-semibold leading-6 text-white mb-4"
                     >
-                        Email Me
+                        Reset
                     </button>
                     </div>
                 </form>

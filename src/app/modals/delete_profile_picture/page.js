@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState } from 'react'
 import Image from 'next/image'
-import './uploadmodal.css'
+import '../upload_profile_picture/uploadmodal.css'
 import DeleteConfirmation from '../confirm_profile_picture_removal/page'
 
 const PictureDelete = () => {
@@ -25,20 +25,20 @@ const PictureDelete = () => {
                     </div>
 
                     <div className='flex justify-center items-center mt-8'>
-                        <Image src='./assets/Ismaili.png' alt='Ismaili' width='255' height='255' />
+                        <Image src='/assets/Ismaili.png' alt='Ismaili' width='255' height='255' />
                     </div>
 
                     <div className='flex flex-col items-start'>
                         <button>
                             <div className='add inline-flex  mt-16 cursor-pointer mb-5'>
-                                <Image src='./icons/material-symbols_add-a-photo-outline.svg' alt='delete' width='32' height='32' />
+                                <Image src='/icons/material-symbols_add-a-photo-outline.svg' alt='delete' width='32' height='32' />
                                 <p className='text-2xl font-medium ml-4'>Add profile picture</p>
                             </div>
                         </button>
 
                         <button onClick={() => setShowDeleteModal(true)}>
                             <div className='delete inline-flex cursor-pointer mb-10'>
-                                <Image src='./icons/material-symbols_delete-outline-rounded.png' alt='delete' width='32' height='32' />
+                                <Image src='/icons/material-symbols_delete-outline-rounded.png' alt='delete' width='32' height='32' />
                                 <p className='text-2xl font-medium ml-4'>Delete picture</p>
                             </div>
                         </button>

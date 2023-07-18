@@ -1,7 +1,7 @@
 import React from 'react'
 import "./job_listing.css"
 import Image from 'next/image'
-import { recentJobs } from '../../../../cardData/recentjobs'
+import { recentJobs } from '../../../cardData/recentjobs'
 
 const JobListing = () => {
   return (
@@ -28,10 +28,16 @@ const JobListing = () => {
           <p className='text-white text-4xl font-medium -mt-12 mb-4'>Find your job</p>
         </div>
 
-        <div className='controls mt-8 text-xl font-medium'>
-          <p className='job '>Job title or keyword <hr className='mt-2' /></p>
-          <p className='location'>Location <hr className='mt-2' /></p>
-          <button className='bg-moringa_orange mt-0 font-semibold text-lg py-2.5 px-10 rounded-md cursor-pointer'>Search</button>
+        <div className='mt-5 controls'>
+
+          <form className='flex justify-center gap-12'>
+
+            <input type='text' placeholder='Job title or keyword' className='placeholder:text-white placeholder:text-xl placeholder:font-medium pl-2 pr-24 cursor-pointer'/>
+            <input type='text' placeholder='Location' className='placeholder:text-white placeholder:text-xl placeholder:font-medium pl-2 focus:outline-none cursor-pointer'/>
+            <button className='bg-moringa_orange mt-0 font-semibold text-lg py-2.5 px-10 rounded-md cursor-pointer'>Search</button>
+
+          </form>
+
         </div>
 
       </section>
@@ -150,7 +156,7 @@ const JobListing = () => {
         <div>
           <div className='center-titles flex justify-around mt-4'>
             <h5 className='text-2xl font-medium mr-20'>All Jobs</h5>
-            <p className='flex text-lg font-medium ml-40'>Sort By  <span className='ml-1 mt-0.5'><Image height={15} width={15} src='./icons/majesticons_chevron-down-line.png' alt='logo' /></span></p>
+            <p className='flex text-lg font-medium ml-40'>Sort By  <span className='ml-1 mt-0.5'><Image src='./icons/majesticons_chevron-down-line.png' alt='chevron-down' width='24' height='24' /></span></p>
           </div>
 
           <div className='grid-container p-3'>
@@ -163,12 +169,12 @@ const JobListing = () => {
                  
                 </div>
                 <div className='ml-10 mt-3'>
-                  <p className='text-xl font-semibold mb-2'>{card.title}</p>
-                  <p className='text-lg font-medium mb-3'>{card.location}</p>
+                  <p className='text-lg font-semibold mb-2'>{card.title}</p>
+                  <p className='text-base font-normal mb-3'>{card.location}</p>
                   
                    <div className='mb-3'>
                     {card.tags.map((tag, index) =>(
-                      <span key={index} className={`text-lg font-normal cursor-pointer mr-3  py-1 px-2.5 rounded-3xl ${index % 2 === 0 ?  'bg-gray-500' : 'bg-orange-500' }`}>{tag}</span>
+                      <span key={index} className={`text-base font-normal cursor-pointer mr-3  py-1 px-2.5 rounded-3xl ${index % 2 === 0 ?  'bg-gray-500' : 'bg-orange-500' }`}>{tag}</span>
 
                     ))}
                    </div>
@@ -185,13 +191,13 @@ const JobListing = () => {
       </section>
 
       <div className='pagination my-3'>
-        <a href='#' className='py-1.5 px-3'><Image alt='logo' src='./icons/gg_push-chevron-left.png ' width='24' height='24' /></a>
-        <a href='#' className='py-1.5 px-3 ml-4'><Image alt='logo' src='./icons/gg_chevron-left.png' width='25' height='25' /></a>
+        <a href='#' className='py-1.5 px-3'><Image src='./icons/gg_push-chevron-left.png ' alt='back-btn' width='24' height='24' /></a>
+        <a href='#' className='py-1.5 px-3 ml-4'><Image src='./icons/gg_chevron-left.png' alt='back-btn' width='25' height='25' /></a>
         <a href='#' className='py-1 px-5 ml-4 text-xl font-medium'>1</a>
         <a href='#' className='py-1 px-5 ml-4 text-xl font-medium'>2</a>
         <a href='#' className='py-1 px-5 ml-4 text-xl font-medium'>3</a>
-        <a href='#' className='py-1.5 px-3 ml-4'><Image alt='logo' src='./icons/gg_chevron-right.png' width='25' height='25'/></a>
-        <a href='#' className='py-1.5 px-3 ml-4'><Image alt='logo' src='./icons/gg_push-chevron-right.png' width='24' height='24'/></a>
+        <a href='#' className='py-1.5 px-3 ml-4'><Image src='./icons/gg_chevron-right.png' alt='next-page-btn' width='25' height='25'/></a>
+        <a href='#' className='py-1.5 px-3 ml-4'><Image src='./icons/gg_push-chevron-right.png' alt='next-page-btn' width='24' height='24'/></a>
       </div>
 
       <section className='footer bg-moringa_blue text-white p-14'>
