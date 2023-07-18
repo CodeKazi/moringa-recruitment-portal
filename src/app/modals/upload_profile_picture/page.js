@@ -19,11 +19,11 @@ const PictureUpload = () => {
                     </div>
 
                     <div className='flex justify-center items-center mt-8'>
-                        <Image src='./assets/Ismaili.png' alt='Ismaili' width='255' height='255' />
+                        <Image src='/assets/Ismaili.png' alt='Ismaili' width='255' height='255' />
                     </div>
 
                     <div className='add inline-flex mt-16 mb-5'>
-                        <Image src='./icons/ic_outline-cloud-upload.png' alt='delete' width='32' height='32' />
+                        <Image src='/icons/ic_outline-cloud-upload.png' alt='delete' width='32' height='32' />
                         <p className='text-2xl font-medium ml-4'>Upload picture</p>
                     </div>
 

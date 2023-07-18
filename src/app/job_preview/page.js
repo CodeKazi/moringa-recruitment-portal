@@ -1,7 +1,7 @@
 import React from 'react'
 import "./job_listing2.css"
 import Image from 'next/image'
-import { moreJobs } from '../../cardData/morejobs'
+import { moreJobs } from '../../../cardData/morejobs'
 
 const JobInfo = () => {
     return (
@@ -157,7 +157,7 @@ const JobInfo = () => {
 
                 <div className='flex items-center justify-between cursor-pointer p-6'>
                     <h2 className='text-3xl font-semibold ml-40 mt-4 '>More Jobs Like This</h2>
-                    <p className='flex text-lg  font-normal mr-72 mt-4'>View All <span><Image src='./icons/mdi_arrow-right-thin.png' width='24' height='24' /></span></p>
+                    <p className='flex text-lg  font-normal mr-72 mt-4'>View All <span><Image src='./icons/mdi_arrow-right-thin.png' alt='foward-arrow' width='24' height='24' /></span></p>
                 </div>
 
             </section>

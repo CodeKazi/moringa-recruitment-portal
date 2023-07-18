@@ -1,9 +1,9 @@
 import React from 'react'
-import AlumniNavbar from '../../components/AlumniNavbar'
-import AlumProfileHeadline from '../../components/AlumProfileHeadline'
-import AlumProfileBody from '../../components/AlumProfileBody'
-import AlumniFooter from '../../components/AlumniFooter'
-import { alumProfile } from '../../cardData/alumProfile'
+import AlumniNavbar from '../../../../components/AlumniNavbar'
+import AlumProfileHeadline from '../../../../components/AlumProfileHeadline'
+import AlumProfileBody from '../../../../components/AlumProfileBody'
+import AlumniFooter from '../../../../components/AlumniFooter'
+import { alumProfile } from '../../../../cardData/alumProfile'
 import editIcon from '/public/assets/material-symbols_edit-square-outline.svg'
 
 const AlumniProfileMain = () => {
