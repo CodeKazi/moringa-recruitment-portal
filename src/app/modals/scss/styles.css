@@ -1,0 +1,40 @@
+
+
+/* @media screen and (max-width: 600px) {
+   .col-75 {
+    width: 100%;
+    margin-top: 0;
+  }
+} */
+
+
+
+.container {
+  .input-fields {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  /* Media queries for responsive layouts */
+
+  @media screen and (max-width: 768px) {
+
+
+    .input-fields {
+      float: left;
+      width: 45%;
+      margin-top: 6px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+
+
+    .input-fields {
+      float: left;
+      width: 45%;
+      margin-top: 6px;
+    }
+  }
+}

@@ -9,7 +9,6 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
 
 .logo {
@@ -22,7 +21,6 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     cursor: pointer;
-
 }
 
 .find {
@@ -31,11 +29,13 @@ nav {
     align-items: center;
 }
 
-.controls {
-    display: flex;
-    justify-content: space-evenly;
-    cursor: pointer;
+.controls input {
+    background-color: inherit;
+    border: none; 
+    border-bottom: 1px solid white;
+    outline: 0; 
 }
+
 
 .job hr {
     width: 300px;
