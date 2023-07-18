@@ -7,7 +7,7 @@ const Register = () => {
     <div>
 
       <div className='border-b-2 pl-20' >
-        <Image src='/assets/moringa0.png' alt='logo'  width='100' height='100' / >
+        <Image src='/assets/moringa0.png' alt='logo'  width='100' height='100' />
       </div>
 
       <div className='container w-2/5 max-w-7xl border-2 rounded-md  m-auto mt-12'>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import './appliedjobs.css'
-import { Applied } from '../../../cardData/applied'
+import {Applied} from '../../../../cardData/applied'
 
 const AppliedJobs = () => {
   return (

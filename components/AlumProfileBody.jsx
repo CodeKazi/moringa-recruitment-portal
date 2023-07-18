@@ -3,7 +3,6 @@ import { alumProfile } from '../cardData/alumProfile'
 import AlumniEducationCard from './AlumniEducationCard'
 import AlumniExperienceCard from './AlumniExperienceCard'
 import Image from 'next/image'
-import {BsDot} from 'react-icons/bs'
 
 const AlumProfileBody = () => {
   // const a = alumProfile.experience
