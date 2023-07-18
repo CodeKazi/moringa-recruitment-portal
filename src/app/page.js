@@ -1,13 +1,13 @@
-// import Register from "./register"
-// import JobListing from "./job_listing"
-// import JobInfo from "./job_listing2"
-// import ApplyModal from "./applymodal"
-// import ResetPassword from "./resetPassword2"
-// import ResetPassword from "./resetPassword1"
-// import Dashboard from "./dashboard"
-// import AlumniProfileMain from "./alumniProfileMain"
-// import AlumniJobInterviewPrep from "./alumniJobInterviewPrep";
-// import AlumProfileDraftJobs from "./alumProfileDraftJobs"
+// import Register from "./register/page"
+// import JobListing from "./job_listing/page"
+// import JobInfo from "./job_preview/page"
+// import ApplyModal from "./apply/page"
+// import ResetPassword from "./reset_password/flow2/page"
+// import ResetPassword from "./reset_password/flow1/page"
+// import Dashboard from "./dashboard/page"
+// import AlumniProfileMain from "./alumni/profile/page"
+// import AlumniJobInterviewPrep from "./alumni/interview_prep/page";
+// import AlumProfileDraftJobs from "./alumni/draft_jobs/page"
 // import AlumniNavbar from "../../components/AlumniNavbar"
 // import AlumniFooter from "../../components/AlumniFooter"
 import SignIn from './login/page'
