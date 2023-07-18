@@ -1,13 +1,13 @@
 import React from 'react'
-import SocialProof from '../../../../components/SocialProof'
-import { socialProof } from '../../../../cardData/socialProof'
-import { topJobs } from '../../../../cardData/topJobs'
-import TopJobsCard from '../../../../components/TopJobsCard'
+import SocialProof from '../../../components/SocialProof'
+import { socialProof } from '../../../cardData/socialProof'
+import { topJobs } from '../../../cardData/topJobs'
+import TopJobsCard from '../../../components/TopJobsCard'
 import { RiPhoneFill } from 'react-icons/ri'
 import { PiEnvelopeSimpleThin } from 'react-icons/pi'
 import { MdLocationOn } from 'react-icons/md'
-import RecentJobsCard from '../../../../components/RecentJobsCard'
-import { recentJobs } from '../../../../cardData/recentjobs'
+import RecentJobsCard from '../../../components/RecentJobsCard'
+import { recentJobs } from '../../../cardData/recentjobs'
 
 const Dashboard = () => {
     return (

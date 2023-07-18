@@ -8,7 +8,7 @@ const AppliedJobs = () => {
     <div>
       <section className='top-section bg-moringa_blue h-56 pt-12'>
         <div className='top text-white flex  ml-48'>
-          <Image src='./assets/Ismaili.png' alt='Ismaili' width='140' height='140' className='rounded-full profile' />
+          <Image src='/assets/Ismaili.png' alt='Ismaili' width='140' height='140' className='rounded-full profile' />
 
           <div className='ml-12 pt-3'>
             <h3 className='text-3xl font-semibold mb-2'>Ismaili Sarr</h3>
@@ -34,7 +34,7 @@ const AppliedJobs = () => {
             <div key={i} className='flex  my-7'>
               <div className='cards  flex items-start   border-b-2 mt-2 '>   
               
-                <Image width={24} height={24} src={card.image} alt='logo' className='border border-gray-300' />
+                <Image src={card.image} alt='company-logo' width='81' height='61' className='border border-gray-300' />
 
                 <div className='title ml-36'>
                   <h3 className='flex text-xl font-medium mb-1'>{card.title}</h3>
@@ -44,7 +44,7 @@ const AppliedJobs = () => {
                 </div>
 
                 <div className='ml-auto'>
-                  <Image src='./icons/x.svg' alt='close' width='24' height='24' className='cursor-pointer' />
+                  <Image src='/icons/x.svg' alt='close' width='24' height='24' className='cursor-pointer' />
                 </div>
 
               </div>
@@ -52,13 +52,13 @@ const AppliedJobs = () => {
           ))}
 
           <div className='pagination flex justify-center items-center my-6 mr-32'>
-            <a href='#' className='border border-black w-11 h-9 py-2 px-3'><Image height={15} width={15} alt='logo' src='./icons/gg_push-chevron-left.png' /></a>
-            <a href='#' className='border border-black ml-4 w-11 h-9 py-2 px-3'><Image height={15} width={15} alt='logo' src='./icons/gg_chevron-left.png' /></a>
+            <a href='#' className='border border-black w-11 h-9 py-2 px-3'><Image src='/icons/gg_push-chevron-left.png' alt='back-btn' width='24' height='24' /></a>
+            <a href='#' className='border border-black ml-4 w-11 h-9 py-2 px-3'><Image src='/icons/gg_chevron-left.png' alt='back-btn' width='24' height='24' /></a>
             <a href='#' className='pl-4 font-normal border border-black ml-4 w-11 h-9 py-1.5 px-3'>1</a>
             <a href='#' className='pl-4 font-normal border border-black ml-4 w-11 h-9 py-1.5 px-3'>2</a>
             <a href='#' className='pl-4 font-normal border border-black ml-4 w-11 h-9 py-1.5 px-3'>3</a>
-            <a href='#' className='border border-black ml-4 w-11 h-9 py-2 px-3'><Image height={15} width={15} alt='logo' src='./icons/gg_chevron-right.png' /></a>
-            <a href='#' className='border border-black font-medium ml-3 w-11 h-9 py-2 px-3'><Image height={15} width={15} alt='logo' src='./icons/gg_push-chevron-right.png' /></a>
+            <a href='#' className='border border-black ml-4 w-11 h-9 py-2 px-3'><Image src='/icons/gg_chevron-right.png' alt='next-page-btn'  width='24' height='24'/></a>
+            <a href='#' className='border border-black font-medium ml-3 w-11 h-9 py-2 px-3'><Image src='/icons/gg_push-chevron-right.png' alt='next-page-btn' width='24' height='24' /></a>
           </div>
 
         </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import "./job_listing.css"
 import Image from 'next/image'
-import { recentJobs } from '../../../../cardData/recentjobs'
+import { recentJobs } from '../../../cardData/recentjobs'
 
 const JobListing = () => {
   return (
@@ -150,7 +150,7 @@ const JobListing = () => {
         <div>
           <div className='center-titles flex justify-around mt-4'>
             <h5 className='text-2xl font-medium mr-20'>All Jobs</h5>
-            <p className='flex text-lg font-medium ml-40'>Sort By  <span className='ml-1 mt-0.5'><Image height={15} width={15} src='./icons/majesticons_chevron-down-line.png' alt='logo' /></span></p>
+            <p className='flex text-lg font-medium ml-40'>Sort By  <span className='ml-1 mt-0.5'><Image src='./icons/majesticons_chevron-down-line.png' alt='chevron-down' width='24' height='24' /></span></p>
           </div>
 
           <div className='grid-container p-3'>
@@ -185,13 +185,13 @@ const JobListing = () => {
       </section>
 
       <div className='pagination my-3'>
-        <a href='#' className='py-1.5 px-3'><Image alt='logo' src='./icons/gg_push-chevron-left.png ' width='24' height='24' /></a>
-        <a href='#' className='py-1.5 px-3 ml-4'><Image alt='logo' src='./icons/gg_chevron-left.png' width='25' height='25' /></a>
+        <a href='#' className='py-1.5 px-3'><Image src='./icons/gg_push-chevron-left.png ' alt='back-btn' width='24' height='24' /></a>
+        <a href='#' className='py-1.5 px-3 ml-4'><Image src='./icons/gg_chevron-left.png' alt='back-btn' width='25' height='25' /></a>
         <a href='#' className='py-1 px-5 ml-4 text-xl font-medium'>1</a>
         <a href='#' className='py-1 px-5 ml-4 text-xl font-medium'>2</a>
         <a href='#' className='py-1 px-5 ml-4 text-xl font-medium'>3</a>
-        <a href='#' className='py-1.5 px-3 ml-4'><Image alt='logo' src='./icons/gg_chevron-right.png' width='25' height='25'/></a>
-        <a href='#' className='py-1.5 px-3 ml-4'><Image alt='logo' src='./icons/gg_push-chevron-right.png' width='24' height='24'/></a>
+        <a href='#' className='py-1.5 px-3 ml-4'><Image src='./icons/gg_chevron-right.png' alt='next-page-btn' width='25' height='25'/></a>
+        <a href='#' className='py-1.5 px-3 ml-4'><Image src='./icons/gg_push-chevron-right.png' alt='next-page-btn' width='24' height='24'/></a>
       </div>
 
       <section className='footer bg-moringa_blue text-white p-14'>

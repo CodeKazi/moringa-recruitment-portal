@@ -9,9 +9,9 @@ const SignIn = () => {
         <div className='relative flex flex-col items-center justify-center border max-w-full lg:w-[790px]  h-2/3 lg:h-[655px]  top-[100px] lg:top-[211px] left-1/4 border-solid border-1 border-moringa_blue/25'>
             <div className=" w-[333px] h-[130px] bg-[url('/assets/moringa1.png')]"/>
             <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                <p className='w-32 text-4xl font-semibold tracking-normal text-left text-[#101F3CCC]'>
+                <a href='/' className='w-32 text-4xl font-semibold tracking-normal text-left text-[#101F3CCC]'>
                     Sign In
-                </p>
+                </a>
                 <form className="space-y-6" action="#" method="POST">
                     <div>
                     <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
@@ -58,7 +58,7 @@ const SignIn = () => {
                 </form>
             </div> 
             <div className='pt-2'>   
-                <a href='/signup'
+                <a href='/reset_password/flow1'
                     className='w-32 text-base font-normal leading-5 tracking-normal text-left text-black underline'
                 >
                     Forgot Password?
