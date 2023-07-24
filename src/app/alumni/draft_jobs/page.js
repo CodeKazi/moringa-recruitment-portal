@@ -10,7 +10,7 @@ import closeBtn from 'public/assets/iconoir_cancel.svg'
 const AlumProfileDraftJobs = () => {
   return (
         //container
-        <div className='flex flex-col w-full h-full lg:h-[2221px] bg-white'>
+        <div className='flex flex-col lg:w-full w-[375px] h-full lg:h-[2221px] bg-white'>
         {/* nav */}
         <div className='flex basis-23/500'>
             <AlumniNavbar/>
@@ -26,9 +26,9 @@ const AlumProfileDraftJobs = () => {
             />
         </div >
         {/* body */}
-        <div className=' flex flex-row basis-4767/10000'>
-        <div className='basis-2/7 ml-[165px] mt-10'>
-                <ul className='flex flex-col justify-center text-2xl font-normal text-moringa_blue'>
+        <div className=' flex lg:flex-row flex-col basis-4767/10000'>
+        <div className='basis-2/7 lg:ml-[165px] mt-10'>
+                <ul className='flex lg:flex-col flex-row justify-center lg:text-2xl text-lg font-normal text-moringa_blue'>
                     <li className='m-2'>
                         <a>Profile</a>
                     </li>
@@ -41,13 +41,13 @@ const AlumProfileDraftJobs = () => {
                 </ul>
             </div>
             <div className='basis-5/7 flex-col mt-10'>
-                <div className='flex flex-row basis-2 text-2xl not-italic  text-moringa_blue'>
+                <div className='flex flex-row basis-2 lg:text-2xl text-lg not-italic  text-moringa_blue'>
                     <span className='mx-2.5 font-semibold'>Applied</span>
                     <span className='mx-2.5'>Drafts</span>
                 </div>
                 <div className='mt-4 flex flex-col w-full lg:w-[515px] '>
                     {draftJobs.map((job, i) => (
-                        <div key={i} className='p-2.5 border my-2.5 rounded-sm w-[750px]'>
+                        <div key={i} className='p-2.5 border my-2.5 rounded-sm lg:w-[750px] w-[375px]'>
                         <AlumDraftJobs
                             image={job.image}
                             title={job.title}

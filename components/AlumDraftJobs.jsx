@@ -14,10 +14,10 @@ const AlumDraftJobs = ({
             <Image src={image} alt='logo' width={100} height={81}/>
         </div>
         <div className='flex h-16 flex-col justify-between items-start w-full lg:w-[350px] px-2.5 ml-10'>
-            <h1 className='text-xl not-italic font-medium text-moringa_blue/80'>
+            <h1 className='lg:text-xl text:lg not-italic font-medium text-moringa_blue/80'>
                 {title}
             </h1>
-            <p className='text-base not-italic font-normal text-moringa_blue/75'>
+            <p className='lg:text-base text-sm not-italic font-normal text-moringa_blue/75'>
                 {location}
             </p>
             <p className='text-xs not-italic font-normal text-black/50'>
