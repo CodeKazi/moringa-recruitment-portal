@@ -26,7 +26,7 @@ const AlumProfileBody = () => {
           </div>
           </div>
           <div>
-            <p className='flex flex-col flex-shrink-0 w-[635px]'>
+            <p className='flex flex-col flex-shrink-0 lg:w-[635px] w-[370px]'>
             {alumProfile.about.about}
             </p>
           </div>
